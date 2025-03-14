@@ -30,7 +30,7 @@ const DisplayLine = () => {
                     </span>
                     <br />
                     <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-200">
-                        By Computer Science Department
+                        By Computer Science Department, ADCET
                     </span>
                 </h1>
 
