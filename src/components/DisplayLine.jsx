@@ -29,8 +29,8 @@ const DisplayLine = () => {
                         Spark2K25
                     </span>
                     <br />
-                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-200">
-                        By ADCET
+                    <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-200">
+                        By Computer Science Department
                     </span>
                 </h1>
 
