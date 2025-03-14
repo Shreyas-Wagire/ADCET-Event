@@ -7,6 +7,8 @@ export const HERO_CONTENT = `I am a full-stack developer skilled in React, Node.
 
 export const ABOUT_TEXT = `I am a passionate full-stack developer with a strong focus on building dynamic and efficient web applications. With hands-on experience in React.js, Node.js, Express.js, and MongoDB, I have developed multiple projects, including a college resource hub, an eBook platform, and a travel website. My expertise spans front-end technologies like React (Vite), Tailwind CSS, and EJS, as well as back-end technologies such as MongoDB, Firebase, and RESTful APIs. Additionally, I have a solid foundation in Python and Java, along with Data Structures and Algorithms (DSA), which helps me write optimized and scalable code. I strive to create seamless, user-friendly experiences while ensuring performance and efficiency in every project I build. `;
 
+export const TAG_LINE = `Unleashing Innovation and Creativity Welcome to Spark 2k25 the flagship tech event of Annasaheb College of Engineering and Technology Ashta, bringing together innovation and a passion for technology. Join us in this celebration of knowledge and innovation!`;
+
 export const EXPERIENCES = [
   {
     year: "2024 - Present",
