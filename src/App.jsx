@@ -11,23 +11,45 @@ import ScrollToTop from './components/ScrollToTop'
 const eventData = [
   {
     id: 1,
-    title: "Robo Tech",
-    description: "Experience the future of robotics with hands-on workshops, competitions, and innovative demonstrations. Join us for an exciting journey into the world of automation and AI.",
+    title: "Apti-Master",
+    description: "Experience the future of aptitude testing with challenging rounds, competitions, and innovative problem-solving. Join us for an exciting journey into the world of logical reasoning.",
+    type: "technical"
   },
   {
     id: 2,
-    title: "Code Craft",
-    description: "Dive into the world of programming with challenging hackathons, coding competitions, and workshops on the latest technologies in software development.",
+    title: "Mini Hackathon",
+    description: "Dive into the world of coding with challenging hackathons, competitions, and workshops on the latest technologies in software development.",
+    type: "technical"
   },
   {
     id: 3,
-    title: "IoT World",
-    description: "Explore the Internet of Things through interactive displays, smart device demonstrations, and workshops on connecting the physical world to the digital realm.",
+    title: "Group Discussion",
+    description: "Showcase your communication skills and analytical thinking through engaging group discussions on contemporary topics.",
+    type: "non-technical"
   },
   {
     id: 4,
-    title: "AI Summit",
-    description: "Discover the power of Artificial Intelligence with machine learning workshops, AI demonstrations, and discussions about the future of intelligent systems.",
+    title: "Innoprotex",
+    description: "Present your innovative prototype ideas that address real-world challenges in this exciting competition for aspiring innovators.",
+    type: "technical"
+  },
+  {
+    id: 5,
+    title: "BGMI",
+    description: "Experience the thrill of competitive mobile gaming in this action-packed BGMI tournament.",
+    type: "non-technical"
+  },
+  {
+    id: 6,
+    title: "Box Cricket",
+    description: "Experience cricket in a unique format with special rules and exciting gameplay in a compact arena.",
+    type: "non-technical"
+  },
+  {
+    id: 7,
+    title: "Treasure Hunt",
+    description: "An exciting treasure hunt that combines problem-solving, teamwork, and adventure across the campus.",
+    type: "non-technical"
   }
 ];
 
@@ -49,16 +71,51 @@ function App() {
                 <div className="py-8">
                   <DisplayLine />
                   <Divider />
-                  <div id="events-section" className="flex flex-wrap justify-center pt-8">
-                    {eventData.map((event, index) => (
-                      <div key={event.id} className="animate-fadeIn" style={{ animationDelay: `${index * 150}ms` }}>
-                        <ExpoTechCard
-                          id={event.id}
-                          title={event.title}
-                          description={event.description}
-                        />
-                      </div>
-                    ))}
+                  
+                  {/* Technical Events Section */}
+                  <div id="events-section" className="mb-12 scroll-mt-24">
+                    <h2 className="text-2xl font-bold text-center mb-8">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                        Technical Events
+                      </span>
+                    </h2>
+                    <div className="flex flex-wrap justify-center">
+                      {eventData
+                        .filter(event => event.type === "technical")
+                        .map((event, index) => (
+                          <div key={event.id} className="animate-fadeIn" style={{ animationDelay: `${index * 150}ms` }}>
+                            <ExpoTechCard
+                              id={event.id}
+                              title={event.title}
+                              description={event.description}
+                              type={event.type}
+                            />
+                          </div>
+                        ))}
+                    </div>
+                  </div>
+
+                  {/* Non-Technical Events Section */}
+                  <div>
+                    <h2 className="text-2xl font-bold text-center mb-8">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+                        Non-Technical Events
+                      </span>
+                    </h2>
+                    <div className="flex flex-wrap justify-center">
+                      {eventData
+                        .filter(event => event.type === "non-technical")
+                        .map((event, index) => (
+                          <div key={event.id} className="animate-fadeIn" style={{ animationDelay: `${index * 150}ms` }}>
+                            <ExpoTechCard
+                              id={event.id}
+                              title={event.title}
+                              description={event.description}
+                              type={event.type}
+                            />
+                          </div>
+                        ))}
+                    </div>
                   </div>
                 </div>
               } />

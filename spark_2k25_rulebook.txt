@@ -1,0 +1,450 @@
+Sant Dnyaneshwar Shikshan Sanstha’s
+
+ANNASAHEB DANGE COLLEGE OF
+ENGINEERING AND TECHNOLOGY, ASHTA
+(An Empowered Autonomous Institute)
+
+Department of Computer Science and
+Engineering and Technology
+(CESA)
+Presents
+
+SPARK
+2K25
+Friday
+28 th March 2025
+
+SPARK 2K25
+Welcome to SPARK 2K25!
+SPARK 2K25 is an annual technical fest organized by CESA (Computer Science and
+Engineering Students Association). CESA has been successfully organizing this event
+every year, maintaining its legacy and enhancing its glory with each subsequent edition.
+
+Event Details:
+Event Date: 28th March 2025
+Last Date for Registration: 21March 2025
+
+Available Events & Registration Links:
+Apti-Master – view details
+Mini Hackathon – view details
+Group Discussion – view details
+Innoprotex – view details
+BGMI – view details
+Box Cricket – view details
+Treasure Hunt – view details
+
+Register Now
+
+https://forms.gle/f9UAeXdJoGGmR9p66
+Don’t miss the opportunity to be a part of SPARK 2K25! Register now and make
+your mark!
+
+APTI-MASTER
+About the Event:
+The Apti-Master competition is designed to test students' aptitude, logical reasoning,
+and problem-solving skills through challenging and engaging rounds.
+
+Rounds & Selection Criteria:
+🖥 Round 1: Online (Laptops)
+Round 2: Offline (Pen & Paper)
+Selection: Top students from Round 1 will qualify for Round 2.
+
+Event Rules:
+•
+
+Each round is time-bound.
+
+•
+
+Participants must adhere to the time limits for each round.
+
+•
+
+Professional and respectful behaviour is expected from all participants.
+
+Entry Fee:
+₹50 per participant
+
+Awards & Recognition:
+Cash prize & certificate for top performers.
+Certificates of Participation for all students.
+
+Venue:
+CSE Labs, ADCET
+
+For Further Details, Contact:
+Prathmesh YadavPatil: +91 9834059495
+Rutuja Patil: +91 8010138189
+We encourage all students to participate and showcase their aptitude and
+problem-solving skills!
+
+Mini hackathon
+The Department of Computer Science is thrilled to announce the Mini-Hackathon—a
+dynamic event that challenges participants to ideate, develop, and present innovative
+tech solutions. This competition is designed to encourage creativity, problem-solving,
+and hands-on development.
+
+Domains for topic selection:
+▪
+▪
+▪
+▪
+▪
+▪
+▪
+▪
+
+Health & Well-being
+Education
+Sustainable Smart Cities
+Technology for Environmental Impact
+Artificial intelligence & Data Science
+Cloud Computing
+AR/VR
+IoT
+
+Rounds:
+Round 1: Online Abstraction Submission
+Participants must submit a structured abstract detailing their project idea, problem
+statement, proposed solution, and expected outcomes.
+The best submissions will be shortlisted for the final round.
+Round 2: Offline Demonstration (at ADCET)
+Shortlisted teams will showcase a working prototype or demonstration of their project
+before a panel of judges.
+
+Event Rules:
+Team Size: 2-4 members per team.
+Submission Guidelines: Abstract should be submitted strictly before deadline.
+
+Entry Fee:
+₹200 per team
+
+Awards & Recognition:
+Cash prizes & certificates for top teams
+Certificates of Participation for all eligible teams
+
+Important Dates:
+Round 1 Submission Deadline: 25th March 2025
+Round 2 (Final Demonstration): 28th March 2025
+
+Venue:
+CSE Labs, ADCET
+For further details, please contact:
+Zahoorahmed Sayyad (Coordinator): +91 877354046
+Akshata Mohite: +91 9892249297
+Samarth Patil: +91 8767617651
+We encourage all tech enthusiasts to participate and bring their innovative ideas to life!
+
+Group Discussion (GD)
+The Department of Computer Science is excited to host the Group Discussion (GD)
+Event, where participants will engage in structured discussions to showcase their
+communication, analytical thinking, and debating skills.
+
+Event Rules:
+1. General Guidelines:
+The event will be held on 28th March 2025 (Time details will be shared soon).
+The event is open to all registered participants.
+Participants must be present at the venue 10 minutes before the scheduled time.
+Mobile phones & electronic devices must be switched off during the discussion.
+
+2. Group Formation & Topics:
+Participants will be divided into groups of 8-10 members based on the number of
+entries.
+Topics will be given on the spot by the judge/moderator.
+Each group will receive a different topic, but difficulty levels will remain consistent.
+
+3. Rules of the Discussion:
+Preparation Time: 2 minutes for spontaneous preparation.
+Discussion Duration: 10 minutes per group.
+Language: Participants must speak only in English.
+A moderator will oversee and ensure smooth proceedings.
+Every participant must contribute meaningfully without interrupting others.
+Use of offensive language, personal attacks, or disrespectful behavior will lead
+to disqualification.
+Notes are not allowed; spontaneous discussion is encouraged.
+
+4. Evaluation Criteria:
+The judge/moderator will determine the evaluation criteria.
+
+5. Results & Awards:
+The judges’ decision will be final and binding.
+Winners & runners-up will be announced at the end of the event.
+Cash prizes & certificates will be awarded to top performers.
+All participants will receive a Certificate of Participation.
+
+6. Miscellaneous:
+CESA reserves the right to amend rules if necessary.
+In case of disputes, the decision of the event coordinator will be final.
+
+Entry Fee:
+₹50 per participant
+
+Venue:
+CSE Labs, ADCET
+For further details, please contact:
+Shivam Gokhale (Coordinator): +91 9921718840
+Rohini Maske: +91 9529647141
+We encourage all students to participate and enhance their communication & critical
+thinking skills!
+
+Innoprotex
+The Department of Computer Science and Engineering is pleased to announce the
+Innovative Idea Prototype Design Competition for SY Class students enrolled in the
+Innovative Idea Prototype Design course. This competition aims to encourage
+students to present creative and feasible prototype ideas that address real-world
+challenges.
+
+1. Eligibility:
+Open to students of the Innovative Idea Prototype Design course.
+Each team must consist of exactly 2 members.
+Each student can participate in only one team.
+Only ADCET students can participate.
+
+2. Registration Details:
+Teams must register via: Registration Link before 20th March 2025.
+A brief abstract (max 300 words) describing the idea must be submitted at the time
+of registration.
+Participation is compulsory for all SY CSE students from ADCET, Ashta.
+
+3. Competition Format & Presentation Guidelines:
+Each team will have 8-10 minutes to present their idea.
+The presentation should cover:
+•
+
+Problem Statement: What issue does the prototype address?
+
+•
+
+Innovation & Uniqueness: How is the idea different from existing solutions?
+
+•
+
+Feasibility: Can the prototype be realistically developed?
+
+•
+
+Materials & Technology: What resources will be used?
+
+•
+
+Expected Impact: How will it benefit users/society?
+Teams may use PowerPoint slides, posters, or short videos to enhance
+their presentation.
+If available, live prototypes can be demonstrated.
+
+4. General Rules:
+The idea must be original and should not violate any patents or copyrights.
+Plagiarism is strictly prohibited and will result in disqualification.
+Ethical considerations should be maintained (e.g., no harmful or illegal ideas).
+
+Participants must maintain professionalism and respect towards judges and
+fellow competitors.
+
+5. Awards & Recognition:
+Certificates of Participation for all teams.
+Winning teams will receive certificates of excellence & special recognition.
+Selected ideas may be considered for further development or funding
+opportunities.
+
+Venue:
+CSE Labs, ADCET
+For further details, please contact:
+Darshan Patil (Coordinator): +91 935956067
+Prathamesh Karandikar: +91 9373612723
+We encourage all eligible students to participate and showcase their innovative ideas!
+
+BGMI
+The Department of Computer Science and Engineering is thrilled to announce the BGMI
+College-Level Tournament under SPARK 2K25! Gear up for an action-packed battle
+where strategy, teamwork, and skills will decide the ultimate champions.
+
+1. General Rules
+1.1. Eligibility:
+Participants must be college students with a valid college ID.
+Each participant's BGMI account must be Level 35+ and Rank Platinum 1 or above
+in the current season.
+
+1.2. Team Composition:
+Each squad must consist of 4 players.
+Players can only play for one team throughout the tournament.
+
+1.3. Game Version & Devices:
+The tournament will be played on the latest version of BGMI.
+Only mobile devices are allowed. Tablets, emulators, and external devices
+(controllers, triggers, etc.) are prohibited.
+
+2. Tournament Format
+2.1. Match Type:
+The tournament will follow Squad TPP Mode.
+Maps to be played: Erangel, Miramar, and Sanhok.
+
+2.2. Qualification Match:
+Two groups will compete in an Erangel match.
+Top 8 teams from each group (16 teams in total) advance to the next stage.
+
+2.3. Finals:
+16 teams will play multiple matches across different maps.
+The top 2 or 3 teams will be rewarded based on their total placement and kill
+points.
+
+2.4. Scoring System (Finals Only):
+Placement Points:
+1st place – 10 points
+2nd place – 6 points
+3rd place – 5 points
+4th place – 4 points
+5th place – 3 points
+6th place – 2 points
+7th-8th place – 1 point
+8th-16th place – 0 points
+Kill Points: 1 point per kill.
+
+3. Gameplay Rules
+Room Card: Advanced Room Cards will be used.
+
+3.1. Lobby Settings:
+FPP/TPP: TPP Mode
+Team Mode: Squad
+Weapons: 3x loot
+Red Zone: Disabled
+Airdrop Weapons: Enabled
+Vehicle Spawn Rate: Default
+
+3.2. Match Scheduling:
+Matches will start at the scheduled time; delays may lead to disqualification.
+Teams must check in 30 minutes before the match starts.
+
+4. Fair Play & Conduct
+4.1. Cheating & Exploits:
+Use of hacks, scripts, macros, VPNs, or unauthorized modifications is strictly
+prohibited.
+Exploiting game bugs for unfair advantages is not allowed.
+
+4.2. Teaming & Collusion:
+Teams must not form alliances or share information with other squads.
+
+Entry Fee:
+₹200
+For further details, please contact:
+Dhananjay kadam (Coordinator): +91 9370594636
+Pranav Patil: +91 9404871515
+We encourage all BGMI enthusiasts to participate and battle for glory!
+
+Box Cricket
+The Department of Computer Science and Engineering brings you an exciting Box
+Cricket Tournament under SPARK 2K25! Gather your team, showcase your cricketing
+skills, and compete for glory!
+
+Tournament Format
+▪
+
+Matches will be played in knockout stages.
+
+▪
+
+Each team will consist of 7 players (one player can participate in only one team).
+
+▪
+
+The match will be of 4 overs.
+
+▪
+
+Only 1 bowler can bowl 1 over.
+
+▪
+
+Super Over will be played in case of a tie.
+
+Game Rules
+▪
+
+Catches: Only direct catches will be considered valid.
+
+▪
+
+Sixes are allowed only in the straight area.
+
+▪
+
+Umpire’s decisions are final and binding. Any argument with the umpire will lead
+to team disqualification.
+
+Entry Fee:
+₹500
+For further details, contact:
+Atharv Shinde: +91 9579100166
+Harshad Patil: +91 7058937117
+Gear up, play fair, and enjoy the game!
+
+Treasure Hunt
+"Rise and Shine. It is hunting time!"
+Get ready for an exciting adventure! Teams will solve clues and navigate their way to the
+final treasure. The first team to find it wins!
+
+Rules & Regulations
+1.
+
+Team Size: Maximum 4 members per team.
+
+2.
+
+Registrations: Only the first 10 registered teams will qualify for the final event.
+
+3.
+
+Clue Progression:
+
+4.
+
+5.
+
+▪
+
+The hunt consists of five clues, each leading to the next.
+
+▪
+
+Teams must follow the sequence; skipping a clue results in
+disqualification.
+
+Fair Play:
+▪
+
+Do not search in off-limit areas.
+
+▪
+
+If you find another team’s clue by accident, do not tamper with it.
+Violating this rule may result in disqualification.
+
+▪
+
+If an object is moved while searching, place it back properly.
+
+Unique Paths:
+▪
+
+Each team’s clues are different and hidden in separate locations.
+
+▪
+
+However, the final treasure location is the same for all teams.
+
+6.
+
+Winning Criteria: The first team to find the final treasure wins!
+
+7.
+
+Judge’s Decision: The decision of the judges is final and binding.
+
+Entry Fee:
+₹200
+For further details, contact:
+Aditya Giribuva: +91 997087063
+Shruti Narule: +91 8446264052
+
+Are you ready to embark on this thrilling hunt?
+
+
