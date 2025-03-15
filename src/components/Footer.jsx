@@ -14,19 +14,19 @@ const Footer = () => {
 
                     {/* Social Media Icons */}
                     <div className="flex space-x-4">
-                        <a href="#" className="hover:text-purple-600 transition duration-300">
+                        <a href="/" className="hover:text-purple-600 transition duration-300">
                             <FaDiscord size={20} />
                         </a>
-                        <a href="#" className="hover:text-blue-400 transition duration-300">
+                        <a href="/" className="hover:text-blue-400 transition duration-300">
                             <FaTwitter size={20} />
                         </a>
-                        <a href="#" className="hover:text-pink-600 transition duration-300">
+                        <a href="/" className="hover:text-pink-600 transition duration-300">
                             <FaInstagram size={20} />
                         </a>
-                        <a href="#" className="hover:text-blue-500 transition duration-300">
+                        <a href="/" className="hover:text-blue-500 transition duration-300">
                             <FaTelegram size={20} />
                         </a>
-                        <a href="#" className="hover:text-blue-400 transition duration-300">
+                        <a href="/" className="hover:text-blue-400 transition duration-300">
                             <FaFacebook size={20} />
                         </a>
                     </div>
@@ -37,7 +37,7 @@ const Footer = () => {
 
                 {/* Developer Credit */}
                 <p className="text-xs text-gray-500 mt-4 text-center">
-                    Developed by <a href="https://swagire.vercel.app/" className="font-xl italic font-bold hover:text-purple-400 transition-colors duration-300">Shreyas</a>
+                    Developed by <a href="https://www.linkedin.com/in/shreyas-wagire" className="font-xl italic font-bold hover:text-purple-400 transition-colors duration-300">Shreyas Wagire</a>
                 </p>
             </div>
         </footer>
