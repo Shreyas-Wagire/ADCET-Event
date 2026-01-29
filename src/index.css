@@ -1,6 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
+@import "./animations.css";
 
-:root{
+:root {
     font-family: "Inter", serif;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #a855f7, #ec4899);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #9333ea, #db2777);
+}
+
+/* Selection styling */
+::selection {
+    background-color: rgba(168, 85, 247, 0.3);
+    color: #ffffff;
+}
+
+/* Ensure body takes full viewport */
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
 }
