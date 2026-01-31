@@ -14,19 +14,26 @@ const MediaPartner = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                    <div className="relative group p-8 rounded-3xl glass hover:bg-white/5 transition-all duration-300 border border-white/10 hover:border-purple-500/30">
-                        {/* Glow Effect */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <a
+                        href="https://www.instagram.com/spgx.01?igsh=MXNqd3V2NWh0aDZmNA%3D%3D&utm_source=qr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block transition-transform hover:scale-105 duration-300"
+                    >
+                        <div className="relative group p-8 rounded-3xl glass hover:bg-white/5 transition-all duration-300 border border-white/10 hover:border-purple-500/30">
+                            {/* Glow Effect */}
+                            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                        {/* Image */}
-                        <div className="relative z-10 bg-white/5 rounded-2xl p-6 backdrop-blur-sm">
-                            <img
-                                src="/spg.PNG"
-                                alt="Media Partner"
-                                className="max-w-[100px] md:max-w-[150px] h-auto object-contain filter drop-shadow-xl hover:scale-105 transition-transform duration-300"
-                            />
+                            {/* Image */}
+                            <div className="relative z-10 bg-white/5 rounded-2xl p-6 backdrop-blur-sm">
+                                <img
+                                    src="/spg.PNG"
+                                    alt="Media Partner"
+                                    className="max-w-[100px] md:max-w-[150px] h-auto object-contain filter drop-shadow-xl hover:scale-105 transition-transform duration-300"
+                                />
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
