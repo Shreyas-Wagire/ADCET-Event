@@ -5,9 +5,9 @@ import CountdownTimer from './CountdownTimer';
 
 const eventDetails = {
     1: {
-        title: "Apti-Master",
+        title: "Apti Master",
         subtitle: "Test Your Analytical Skills",
-        description: "The Apti-Master competition is designed to test students' aptitude, logical reasoning, and problem-solving skills through challenging and engaging rounds.",
+        description: "The Apti Master competition is designed to test students' aptitude, logical reasoning, and problem-solving skills through challenging and engaging rounds.",
         why: [
             "Enhance your aptitude and logical reasoning",
             "Test your problem-solving abilities",
@@ -26,18 +26,18 @@ const eventDetails = {
             }
         ],
         coordinator: {
-            name: "Prathmesh YadavPatil",
-            contact: "+91 9834059495",
-            role: "Event Head"
+            name: "Tanvi Patil",
+            contact: "+91 XXXXXXXXXX",
+            role: "Event Coordinator"
         },
         cocoordinator: {
-            name: "Rutuja Patil",
-            contact: "+91 8010138189",
+            name: "Prathamesh Sutar",
+            contact: "+91 XXXXXXXXXX",
             role: "Co-Coordinator"
         },
         fee: "₹50 per participant",
         type: "technical",
-        registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+        registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     },
     2: {
         title: "Mini Hackathon",
@@ -49,7 +49,7 @@ const eventDetails = {
             "Network with fellow developers",
             "Win attractive cash prizes"
         ],
-        highlights: "Multiple domains including Health, Education, AI/ML,IoT, and more. Two rounds: Online Abstract Submission and Offline Demonstration.",
+        highlights: "Multiple domains including Health, Education, AI/ML, IoT, and more. Two rounds: Online Abstract Submission and Offline Demonstration.",
         events: [
             {
                 title: "Round 1: Abstract Submission",
@@ -61,18 +61,18 @@ const eventDetails = {
             }
         ],
         coordinator: {
-            name: "Zahoorahmed Sayyad",
-            contact: "+91 877354046",
-            role: "Event Head"
+            name: "Shruti Khanchanale",
+            contact: "+91 XXXXXXXXXX",
+            role: "Event Coordinator"
         },
         cocoordinator: {
-            name: "Akshata Mohite",
-            contact: "+91 9892249297",
+            name: "Pratik Jadhav",
+            contact: "+91 XXXXXXXXXX",
             role: "Co-Coordinator"
         },
         fee: "₹200 per team",
         type: "technical",
-        registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+        registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     },
     3: {
         title: "Group Discussion",
@@ -96,18 +96,18 @@ const eventDetails = {
             }
         ],
         coordinator: {
-            name: "Shivam Gokhale",
-            contact: "+91 9921718840",
-            role: "Event Head"
+            name: "Shreya Chougule",
+            contact: "+91 XXXXXXXXXX",
+            role: "Event Coordinator"
         },
         cocoordinator: {
-            name: "Rohini Maske",
-            contact: "+91 9529647141",
+            name: "Shreyas Wagire",
+            contact: "+91 XXXXXXXXXX",
             role: "Co-Coordinator"
         },
         fee: "₹50 per participant",
         type: "non-technical",
-        registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+        registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     },
     4: {
         title: "Innoprotex",
@@ -131,103 +131,48 @@ const eventDetails = {
             }
         ],
         coordinator: {
-            name: "Contact CESA Team",
-            contact: "NA",
-            role: "Event Head"
+            name: "Sakshi Mohite",
+            contact: "+91 XXXXXXXXXX",
+            role: "Event Coordinator"
+        },
+        cocoordinator: {
+            name: "Pranav Chavan",
+            contact: "+91 XXXXXXXXXX",
+            role: "Co-Coordinator"
         },
         fee: "Free for ADCET Students",
         type: "technical",
-        registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+        registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     },
     5: {
-        title: "BGMI",
-        subtitle: "Battle Grounds Mobile India",
-        description: "Experience the thrill of competitive mobile gaming in this action-packed BGMI tournament.",
+        title: "GAT Master",
+        subtitle: "General Aptitude Test Challenge",
+        description: "A comprehensive General Aptitude Test designed to evaluate students' overall analytical and reasoning abilities across various domains.",
         why: [
-            "Compete with skilled players",
-            "Test your gaming strategies",
-            "Win exciting prizes",
-            "Build team coordination"
-        ],
-        highlights: "Team-based competition, Multiple rounds, Professional tournament format.",
-        events: [
-            {
-                title: "Qualification Rounds",
-                description: "Initial team battles"
-            },
-            {
-                title: "Finals",
-                description: "Top teams battle for victory"
-            }
-        ],
-        coordinator: {
-            name: "Contact CESA Team",
-            contact: "NA",
-            role: "Event Head"
-        },
-        fee: "Contact coordinators for details",
-        type: "non-technical",
-        registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
-    },
-    6: {
-        title: "Box Cricket",
-        subtitle: "Cricket with a Twist",
-        description: "Experience cricket in a unique format with special rules and exciting gameplay in a compact arena.",
-        why: [
-            "Play innovative cricket format",
-            "Build team spirit",
-            "Enjoy competitive sports",
+            "Enhance general aptitude skills",
+            "Test your overall reasoning abilities",
+            "Compete with the best minds",
             "Win exciting prizes"
         ],
-        highlights: "Special rules, Limited overs format, Exciting prizes for winners.",
+        highlights: "Comprehensive aptitude assessment, Multiple sections covering various topics, Professional evaluation criteria.",
         events: [
             {
-                title: "League Matches",
-                description: "Initial team matches"
+                title: "Round 1",
+                description: "Online general aptitude test"
             },
             {
-                title: "Knockout Rounds",
-                description: "Quarter-finals onwards"
+                title: "Round 2",
+                description: "Advanced assessment for qualified participants"
             }
         ],
         coordinator: {
             name: "Contact CESA Team",
             contact: "NA",
-            role: "Event Head"
+            role: "Event Coordinator"
         },
         fee: "Contact coordinators for details",
-        type: "non-technical",
-        registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
-    },
-    7: {
-        title: "Treasure Hunt",
-        subtitle: "Hunt for Glory",
-        description: "An exciting treasure hunt that combines problem-solving, teamwork, and adventure across the campus.",
-        why: [
-            "Test your problem-solving skills",
-            "Explore the campus",
-            "Work in teams",
-            "Win exciting prizes"
-        ],
-        highlights: "Multiple challenging clues, Team-based competition, Time-bound rounds.",
-        events: [
-            {
-                title: "Clue Solving",
-                description: "Decode hints and locations"
-            },
-            {
-                title: "Final Hunt",
-                description: "Race to the treasure"
-            }
-        ],
-        coordinator: {
-            name: "Contact CESA Team",
-            contact: "NA",
-            role: "Event Head"
-        },
-        fee: "Contact coordinators for details",
-        type: "non-technical",
-        registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+        type: "technical",
+        registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     }
 };
 

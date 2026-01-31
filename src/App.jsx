@@ -15,7 +15,7 @@ import FloatingRegistrationButton from './components/FloatingRegistrationButton'
 const eventData = [
   {
     id: 1,
-    title: "Apti-Master",
+    title: "Apti Master",
     description: "Experience the future of aptitude testing with challenging rounds, competitions, and innovative problem-solving. Join us for an exciting journey into the world of logical reasoning.",
     type: "technical"
   },
@@ -39,21 +39,9 @@ const eventData = [
   },
   {
     id: 5,
-    title: "BGMI",
-    description: "Experience the thrill of competitive mobile gaming in this action-packed BGMI tournament.",
-    type: "non-technical"
-  },
-  {
-    id: 6,
-    title: "Box Cricket",
-    description: "Experience cricket in a unique format with special rules and exciting gameplay in a compact arena.",
-    type: "non-technical"
-  },
-  {
-    id: 7,
-    title: "Treasure Hunt",
-    description: "An exciting treasure hunt that combines problem-solving, teamwork, and adventure across the campus.",
-    type: "non-technical"
+    title: "GAT Master",
+    description: "A comprehensive General Aptitude Test designed to evaluate students' overall analytical and reasoning abilities across various domains.",
+    type: "technical"
   }
 ];
 

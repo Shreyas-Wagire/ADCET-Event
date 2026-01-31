@@ -154,7 +154,7 @@ export const EVENT_DETAILS = {
     },
     fee: "₹50 per participant",
     type: "technical",
-    registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+    registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   },
   2: {
     title: "Mini Hackathon",
@@ -187,7 +187,7 @@ export const EVENT_DETAILS = {
     },
     fee: "₹200 per team",
     type: "technical",
-    registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+    registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   },
   3: {
     title: "Group Discussion",
@@ -220,7 +220,7 @@ export const EVENT_DETAILS = {
     },
     fee: "₹50 per participant",
     type: "non-technical",
-    registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+    registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   },
   4: {
     title: "Innoprotex",
@@ -249,7 +249,7 @@ export const EVENT_DETAILS = {
     },
     fee: "Free for ADCET Students",
     type: "technical",
-    registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+    registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   },
   5: {
     title: "BGMI",
@@ -278,7 +278,7 @@ export const EVENT_DETAILS = {
     },
     fee: "Contact coordinators for details",
     type: "non-technical",
-    registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+    registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   },
   6: {
     title: "Box Cricket",
@@ -307,7 +307,7 @@ export const EVENT_DETAILS = {
     },
     fee: "Contact coordinators for details",
     type: "non-technical",
-    registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+    registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   },
   7: {
     title: "Treasure Hunt",
@@ -336,6 +336,6 @@ export const EVENT_DETAILS = {
     },
     fee: "Contact coordinators for details",
     type: "non-technical",
-    registrationLink: "https://forms.gle/f9UAeXdJoGGmR9p66"
+    registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   }
 };
