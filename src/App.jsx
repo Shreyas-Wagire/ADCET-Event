@@ -11,37 +11,61 @@ import ParticleBackground from './components/ParticleBackground'
 import StatsSection from './components/StatsSection'
 import FAQSection from './components/FAQSection'
 import FloatingRegistrationButton from './components/FloatingRegistrationButton'
+import TeamHierarchy from './components/TeamHierarchy'
+import Particles from './components/Particles'
+import RegistrationCountdown from './components/RegistrationCountdown'
+import MediaPartner from './components/MediaPartner'
 
 const eventData = [
   {
     id: 1,
     title: "Apti Master",
     description: "Experience the future of aptitude testing with challenging rounds, competitions, and innovative problem-solving. Join us for an exciting journey into the world of logical reasoning.",
-    type: "technical"
+    type: "non-technical",
+    coordinators: [
+      { name: "Ms. Tanavi", contact: "9022573574" },
+      { name: "Mr. Prathmesh", contact: "9370657289" }
+    ]
   },
   {
     id: 2,
     title: "Mini Hackathon",
     description: "Dive into the world of coding with challenging hackathons, competitions, and workshops on the latest technologies in software development.",
-    type: "technical"
+    type: "technical",
+    coordinators: [
+      { name: "Mr. Pratik", contact: "8767354046" },
+      { name: "Ms. Shruti", contact: "9421277748" }
+    ]
   },
   {
     id: 3,
     title: "Group Discussion",
     description: "Showcase your communication skills and analytical thinking through engaging group discussions on contemporary topics.",
-    type: "non-technical"
+    type: "non-technical",
+    coordinators: [
+      { name: "Mr. Shreyas", contact: "7499321428" },
+      { name: "Ms. Shreya", contact: "9356603103" }
+    ]
   },
   {
     id: 4,
     title: "Innoprotex",
     description: "Present your innovative prototype ideas that address real-world challenges in this exciting competition for aspiring innovators.",
-    type: "technical"
+    type: "technical",
+    coordinators: [
+      { name: "Mr. Pranav", contact: "7058608709" },
+      { name: "Ms. Sakashi", contact: "9604507650" }
+    ]
   },
   {
     id: 5,
     title: "GAT Master",
     description: "A comprehensive General Aptitude Test designed to evaluate students' overall analytical and reasoning abilities across various domains.",
-    type: "technical"
+    type: "non-technical",
+    coordinators: [
+      { name: "Mr. Pruthviraj", contact: "8262968845" },
+      { name: "Ms. Manasi", contact: "9421277748" }
+    ]
   }
 ];
 
@@ -50,8 +74,21 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className='min-h-screen overflow-x-hidden bg-slate-950 text-neutral-300 antialiased selection:bg-purple-500/30 selection:text-white'>
-        {/* Enhanced Background with Particles */}
-        <ParticleBackground />
+        {/* Particle Background - Full Page */}
+        <div className='fixed inset-0 -z-20 w-full h-full'>
+          <Particles
+            particleColors={["#a855f7", "#ec4899", "#06b6d4", "#ffffff"]}
+            particleCount={300}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={150}
+            moveParticlesOnHover={true}
+            particleHoverFactor={0.5}
+            alphaParticles={true}
+            disableRotation={false}
+            pixelRatio={window.devicePixelRatio || 1}
+          />
+        </div>
 
         {/* Grid pattern background */}
         <div className='fixed inset-0 -z-10'>
@@ -65,6 +102,7 @@ function App() {
               <Route path="/" element={
                 <div className="py-8">
                   <DisplayLine />
+                  <RegistrationCountdown />
                   <Divider />
 
                   {/* Technical Events Section */}
@@ -84,6 +122,7 @@ function App() {
                               title={event.title}
                               description={event.description}
                               type={event.type}
+                              coordinators={event.coordinators}
                             />
                           </div>
                         ))}
@@ -107,11 +146,20 @@ function App() {
                               title={event.title}
                               description={event.description}
                               type={event.type}
+                              coordinators={event.coordinators}
                             />
                           </div>
                         ))}
                     </div>
                   </div>
+
+                  {/* Team Hierarchy Section */}
+                  <TeamHierarchy />
+
+                  <Divider />
+
+                  {/* Media Partner Section */}
+                  <MediaPartner />
 
                   {/* FAQ Section */}
                   <FAQSection />

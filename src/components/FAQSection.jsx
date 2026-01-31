@@ -44,7 +44,7 @@ const FAQSection = () => {
     };
 
     return (
-        <section className="py-16 md:py-24 relative">
+        <section className="py-8 md:py-12 relative">
             <div className="max-w-4xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
                     <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">

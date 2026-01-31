@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import CountdownTimer from './CountdownTimer';
 
 const DisplayLine = () => {
+    const [timeLeft, setTimeLeft] = useState({
+        days: 0,
+        hours: 0
+    });
+
+    useEffect(() => {
+        const calculateTimeLeft = () => {
+            // Event date: February 14, 2026 at 9:00 AM
+            const eventDate = new Date('2026-02-14T09:00:00');
+            const difference = +eventDate - +new Date();
+
+            if (difference > 0) {
+                setTimeLeft({
+                    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((difference / (1000 * 60 * 60)) % 24)
+                });
+            } else {
+                setTimeLeft({ days: 0, hours: 0 });
+            }
+        };
+
+        calculateTimeLeft();
+        const timer = setInterval(calculateTimeLeft, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
+
     const scrollToEvents = () => {
         const eventsSection = document.getElementById('events-section');
         if (eventsSection) {
@@ -34,16 +61,16 @@ const DisplayLine = () => {
             <div className="relative z-10 flex flex-col items-center justify-center">
 
                 {/* Container for Ring and Title - Centered Together */}
-                <div className="relative w-full flex items-center justify-center mb-16 px-4">
+                <div className="relative w-full flex items-center justify-center mb-8 px-4">
 
                     {/* Rotating Department Ring with Central Orb */}
-                    <div className="absolute w-[320px] h-[320px] md:w-[450px] md:h-[450px]">
+                    <div className="absolute w-[280px] h-[280px] md:w-[450px] md:h-[450px]">
                         {/* Central Glowing Orb */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-48 md:h-48">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 md:w-40 md:h-40">
                             {/* Multiple glow layers */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 rounded-full blur-3xl opacity-60 animate-pulse-slow"></div>
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-400 to-pink-400 rounded-full blur-2xl opacity-80"></div>
-                            <div className="absolute inset-0 bg-gradient-to-br from-purple-300 via-blue-300 to-pink-300 rounded-full blur-xl"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 rounded-full blur-3xl opacity-25 animate-pulse-slow"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-400 to-pink-400 rounded-full blur-2xl opacity-35"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-purple-300 via-blue-300 to-pink-300 rounded-full blur-xl opacity-45"></div>
                         </div>
 
                         {/* Rotating Circular Text */}
@@ -61,15 +88,15 @@ const DisplayLine = () => {
                             </text>
                         </svg>
 
-                        {/* Days Countdown - Top */}
+                        {/* Days Countdown - Top - LIVE */}
                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 text-center">
                             <div className="text-[10px] text-cyan-400 tracking-widest uppercase">DAYS</div>
-                            <div className="text-xl md:text-2xl font-bold text-white">12</div>
+                            <div className="text-xl md:text-2xl font-bold text-white tabular-nums">{timeLeft.days}</div>
                         </div>
 
-                        {/* Hours Countdown - Bottom */}
+                        {/* Hours Countdown - Bottom - LIVE */}
                         <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-center">
-                            <div className="text-xl md:text-2xl font-bold text-white">18</div>
+                            <div className="text-xl md:text-2xl font-bold text-white tabular-nums">{timeLeft.hours}</div>
                             <div className="text-[10px] text-cyan-400 tracking-widest uppercase">HOURS</div>
                         </div>
                     </div>
@@ -97,7 +124,7 @@ const DisplayLine = () => {
                 </div>
 
                 {/* Explore Button */}
-                <div className="mt-8">
+                <div className="mt-12">
                     <button
                         onClick={scrollToEvents}
                         className="group relative px-12 py-4 overflow-hidden rounded-lg border border-gray-600 hover:border-purple-500 transition-all duration-500"
@@ -114,7 +141,7 @@ const DisplayLine = () => {
                 </div>
 
                 {/* Vertical Line Indicator */}
-                <div className="mt-8 flex flex-col items-center">
+                <div className="mt-4 flex flex-col items-center">
                     <div className="w-px h-16 bg-gradient-to-b from-gray-600 to-transparent"></div>
                 </div>
             </div>

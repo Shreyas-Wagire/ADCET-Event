@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { FaArrowLeft, FaPhone, FaUserTie, FaMoneyBillWave, FaBook } from 'react-icons/fa';
+import { FaArrowLeft, FaPhone, FaUserTie, FaMoneyBillWave, FaBook, FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 import CountdownTimer from './CountdownTimer';
 
 const eventDetails = {
@@ -14,7 +14,7 @@ const eventDetails = {
             "Compete with the best minds",
             "Win exciting cash prizes"
         ],
-        highlights: "Two challenging rounds: Online (Laptops) and Offline (Pen & Paper). Top performers from Round 1 qualify for Round 2.",
+        highlights: "Single Entry Competition. Two challenging rounds: Online (Laptops) and Offline (Pen & Paper). Top performers from Round 1 qualify for Round 2.",
         events: [
             {
                 title: "Round 1",
@@ -27,16 +27,16 @@ const eventDetails = {
         ],
         coordinator: {
             name: "Tanvi Patil",
-            contact: "+91 XXXXXXXXXX",
-            role: "Event Coordinator"
+            contact: "+91 9022573574",
+            image: "/head/Tanvi patil.jpeg"
         },
         cocoordinator: {
-            name: "Prathamesh Sutar",
-            contact: "+91 XXXXXXXXXX",
-            role: "Co-Coordinator"
+            name: "Prathmesh Sutar",
+            contact: "+91 9370657289",
+            image: "/head/PS.jpeg"
         },
-        fee: "₹50 per participant",
-        type: "technical",
+        fee: "₹100 per participant",
+        type: "non-technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     },
     2: {
@@ -49,7 +49,7 @@ const eventDetails = {
             "Network with fellow developers",
             "Win attractive cash prizes"
         ],
-        highlights: "Multiple domains including Health, Education, AI/ML, IoT, and more. Two rounds: Online Abstract Submission and Offline Demonstration.",
+        highlights: "Team Size: 2-4 Members. Multiple domains including Health, Education, AI/ML, IoT, and more. Two rounds: Online Abstract Submission and Offline Demonstration.",
         events: [
             {
                 title: "Round 1: Abstract Submission",
@@ -61,16 +61,16 @@ const eventDetails = {
             }
         ],
         coordinator: {
-            name: "Shruti Khanchanale",
-            contact: "+91 XXXXXXXXXX",
-            role: "Event Coordinator"
+            name: "Pratik Jadhav",
+            contact: "+91 9356481821",
+            image: "/head/pratik jadhav.jpeg"
         },
         cocoordinator: {
-            name: "Pratik Jadhav",
-            contact: "+91 XXXXXXXXXX",
-            role: "Co-Coordinator"
+            name: "Shruti Khanchanale",
+            contact: "+91 9421277748",
+            image: "/head/Shruti.jpeg"
         },
-        fee: "₹200 per team",
+        fee: "₹200 - ₹400 per team",
         type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     },
@@ -84,7 +84,7 @@ const eventDetails = {
             "Learn team dynamics",
             "Enhance leadership qualities"
         ],
-        highlights: "Groups of 8-10 members, Topics given on spot, English medium discussion, Professional evaluation criteria.",
+        highlights: "Single Entry. Groups of 8-10 members formed on spot, Topics given on spot, English medium discussion, Professional evaluation criteria.",
         events: [
             {
                 title: "Preparation Time",
@@ -97,15 +97,15 @@ const eventDetails = {
         ],
         coordinator: {
             name: "Shreya Chougule",
-            contact: "+91 XXXXXXXXXX",
-            role: "Event Coordinator"
+            contact: "+91 9356603103",
+            image: "/head/Shreya.jpeg"
         },
         cocoordinator: {
             name: "Shreyas Wagire",
-            contact: "+91 XXXXXXXXXX",
-            role: "Co-Coordinator"
+            contact: "+91 7499321428",
+            image: "/head/shreyas.jpg"
         },
-        fee: "₹50 per participant",
+        fee: "₹100 per participant",
         type: "non-technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     },
@@ -132,46 +132,47 @@ const eventDetails = {
         ],
         coordinator: {
             name: "Sakshi Mohite",
-            contact: "+91 XXXXXXXXXX",
-            role: "Event Coordinator"
+            contact: "+91 9604507650",
+            image: "/head/sakshi.jpeg"
         },
         cocoordinator: {
             name: "Pranav Chavan",
-            contact: "+91 XXXXXXXXXX",
-            role: "Co-Coordinator"
+            contact: "+91 7058608709",
+            image: "/head/Pranav Chavan.jpeg"
         },
-        fee: "Free for ADCET Students",
+        fee: "₹100 per team",
         type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     },
     5: {
         title: "GAT Master",
-        subtitle: "General Aptitude Test Challenge",
-        description: "A comprehensive General Aptitude Test designed to evaluate students' overall analytical and reasoning abilities across various domains.",
+        subtitle: "Test Your General Aptitude",
+        description: "A comprehensive General Aptitude Test designed to evaluate participants' analytical thinking, reasoning abilities, and problem-solving skills.",
         why: [
-            "Enhance general aptitude skills",
-            "Test your overall reasoning abilities",
-            "Compete with the best minds",
-            "Win exciting prizes"
+            "Improve general aptitude skills",
+            "Prepare for competitive exams",
+            "Benchmark your skills",
+            "Win recognition and prizes"
         ],
-        highlights: "Comprehensive aptitude assessment, Multiple sections covering various topics, Professional evaluation criteria.",
+        highlights: "Team Size: 2 Members. Multiple sections covering Quantitative, Logical, and Verbal Reasoning. Structured test format with time limits.",
         events: [
             {
-                title: "Round 1",
-                description: "Online general aptitude test"
-            },
-            {
-                title: "Round 2",
-                description: "Advanced assessment for qualified participants"
+                title: "Test Round",
+                description: "Comprehensive written test"
             }
         ],
         coordinator: {
-            name: "Contact CESA Team",
-            contact: "NA",
-            role: "Event Coordinator"
+            name: "Manasi Suryawanshi",
+            contact: "+91 9130271171",
+            image: "/head/Mansi.jpeg"
         },
-        fee: "Contact coordinators for details",
-        type: "technical",
+        cocoordinator: {
+            name: "Pruthviraj Thorbole",
+            contact: "+91 8262968845",
+            image: "/head/pruthviraj.jpeg"
+        },
+        fee: "₹200 per team",
+        type: "non-technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
     }
 };
@@ -187,31 +188,27 @@ const EventDetails = () => {
 
     if (!event) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
+            <div className="min-h-screen flex items-center justify-center bg-gray-950">
                 <div className="text-center">
-                    <h2 className="text-2xl font-bold mb-4">Event not found</h2>
+                    <h2 className="text-2xl font-bold mb-4 text-white">Event not found</h2>
                     <button
                         onClick={() => navigate('/')}
-                        className="px-6 py-2 bg-purple-600/20 rounded-lg hover:bg-purple-600/30"
+                        className="px-6 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600"
                     >
                         Return Home
                     </button>
                 </div>
             </div>
         );
-    };
-
-    const gradientColors = event.type === 'technical'
-        ? 'from-purple-600 via-pink-600 to-blue-600'
-        : 'from-blue-600 via-cyan-600 to-emerald-600';
+    }
 
     return (
-        <div className="w-full pb-16 animate-fade-in-up">
-            {/* Hero Banner */}
-            <div className={`relative overflow-hidden rounded-3xl mb-12 bg-gradient-to-br ${gradientColors} p-12 md:p-16`}>
-                {/* Animated background pattern */}
+        <div className="min-h-screen bg-gray-950 text-white pb-16 pt-20">
+            {/* Hero Section */}
+            <div className="relative bg-gradient-to-br from-cyan-600 to-blue-700 rounded-3xl m-4 md:m-8 p-8 md:p-12">
+                {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-10">
-                    <div className="absolute inset-0 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_75%,#000_75%,#000),linear-gradient(45deg,#000_25%,transparent_25%,transparent_75%,#000_75%,#000)] bg-[length:60px_60px] bg-[position:0_0,30px_30px]"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_75%,#000_75%,#000),linear-gradient(45deg,#000_25%,transparent_25%,transparent_75%,#000_75%,#000)] bg-[length:60px_60px] bg-[position:0_0,30px_30px] rounded-3xl"></div>
                 </div>
 
                 {/* Content */}
@@ -219,104 +216,106 @@ const EventDetails = () => {
                     {/* Back Button */}
                     <button
                         onClick={() => navigate('/')}
-                        className="mb-6 flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-200 group"
+                        className="mb-6 flex items-center gap-2 text-white/80 hover:text-white transition-colors"
                     >
-                        <FaArrowLeft className="transform group-hover:-translate-x-1 transition-transform duration-200" />
+                        <FaArrowLeft />
                         <span>Back to Events</span>
                     </button>
 
                     {/* Event Type Badge */}
                     <p className="text-sm uppercase tracking-wider text-white/70 mb-3">
-                        [ {event.type === 'technical' ? 'TECHNICAL EVENT' : 'NON-TECHNICAL EVENT'} ]
+                        {event.type === 'technical' ? 'TECHNICAL EVENT' : 'NON-TECHNICAL EVENT'}
                     </p>
 
                     {/* Title */}
                     <h1 className="text-4xl md:text-6xl font-bold mb-3 text-white">{event.title}</h1>
-                    <h2 className="text-2xl md:text-3xl text-white/90 mb-8">{event.subtitle}</h2>
+                    <h2 className="text-xl md:text-2xl text-white/90 mb-8">{event.subtitle}</h2>
 
                     {/* Action Buttons */}
                     <div className="flex flex-wrap gap-4">
                         <button
                             onClick={handleRegister}
-                            className="px-8 py-4 bg-white text-gray-900 rounded-xl font-bold
-                                    transform transition-all duration-300 hover:scale-105 hover:shadow-2xl
-                                    focus:outline-none focus:ring-4 focus:ring-white/50"
+                            className="px-8 py-3 bg-white text-gray-900 rounded-lg font-semibold hover:scale-105 transition-transform"
                         >
                             Register Now
                         </button>
-
                         <a
-                            href="https://drive.google.com/drive/folders/1qa8hPIDTXDLjL9bzfQ0Vjzzx2UsT09AM"
+                            href="https://drive.google.com/drive/folders/16J1xM3P9myi2vcOLEBYdAbYqYy0xW2eW?usp=drive_link"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-8 py-4 bg-white/10 backdrop-blur-lg text-white rounded-xl font-bold
-                                    border-2 border-white/30 transform transition-all duration-300 
-                                    hover:scale-105 hover:bg-white/20 hover:border-white/50
-                                    focus:outline-none focus:ring-4 focus:ring-white/30
-                                    flex items-center gap-2"
+                            className="px-8 py-3 bg-white/10 backdrop-blur-lg text-white rounded-lg font-semibold border-2 border-white/30 hover:bg-white/20 transition-all flex items-center gap-2"
                         >
                             <FaBook />
                             <span>Rule Book</span>
+                        </a>
+                        <a
+                            href="https://whatsapp.com/channel/0029Vb728qhFSAt4kEH0jM1q"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-8 py-3 bg-green-500/20 backdrop-blur-lg text-white rounded-lg font-semibold border-2 border-green-500/30 hover:bg-green-500/30 transition-all flex items-center gap-2"
+                        >
+                            <FaWhatsapp className="text-xl" />
+                            <span>Join for Updates</span>
                         </a>
                     </div>
                 </div>
             </div>
 
             {/* Countdown Timer */}
-            <div className="mb-12">
+            <div className="mx-4 md:mx-8 my-8">
                 <CountdownTimer targetDate="2026-02-14T09:00:00" />
             </div>
 
-            {/* Main Content Grid */}
-            <div className="max-w-7xl mx-auto space-y-8">
-                {/* Description Section */}
-                <div className="glass-strong rounded-2xl p-8 animate-fade-in-up stagger-1">
+            {/* Main Content */}
+            <div className="max-w-7xl mx-auto px-4 md:px-8 space-y-8">
+                {/* About the Event */}
+                <div className="bg-gray-900 rounded-2xl p-6 md:p-8 border-l-4 border-cyan-500">
                     <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
-                        <span className={`h-1 w-12 rounded-full bg-gradient-to-r ${gradientColors}`}></span>
+                        <span className="text-cyan-500">📋</span>
                         About the Event
                     </h3>
-                    <p className="text-gray-300 leading-relaxed text-lg">
+                    <p className="text-gray-300 leading-relaxed">
                         {event.description}
                     </p>
                 </div>
 
-                {/* Why Participate & Highlights Grid */}
-                <div className="grid md:grid-cols-2 gap-8">
+                {/* Two Column Layout - Why Participate & Key Highlights */}
+                <div className="grid md:grid-cols-2 gap-6">
                     {/* Why Participate */}
-                    <div className="glass-strong rounded-2xl p-8 animate-fade-in-up stagger-2">
+                    <div className="bg-gray-900 rounded-2xl p-6 md:p-8 border-l-4 border-purple-500">
                         <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                            <span className={`h-1 w-12 rounded-full bg-gradient-to-r ${gradientColors}`}></span>
+                            <span className="text-purple-500">✨</span>
                             Why Participate?
                         </h3>
                         <ul className="space-y-4">
                             {event.why.map((reason, index) => (
-                                <li key={index} className="flex items-start gap-3 group">
-                                    <span className={`mt-1 h-2 w-2 rounded-full bg-gradient-to-r ${gradientColors} flex-shrink-0 group-hover:scale-150 transition-transform duration-300`}></span>
-                                    <span className="text-gray-300 group-hover:text-white transition-colors duration-200">{reason}</span>
+                                <li key={index} className="flex items-start gap-3">
+                                    <FaCheckCircle className="text-cyan-400 mt-1 flex-shrink-0" />
+                                    <span className="text-gray-300">{reason}</span>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Highlights */}
-                    <div className="glass-strong rounded-2xl p-8 animate-fade-in-up stagger-3">
+                    {/* Key Highlights */}
+                    <div className="bg-gray-900 rounded-2xl p-6 md:p-8 border-l-4 border-blue-500">
                         <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                            <span className={`h-1 w-12 rounded-full bg-gradient-to-r ${gradientColors}`}></span>
+                            <span className="text-blue-500">🔑</span>
                             Key Highlights
                         </h3>
-                        <p className="text-gray-300 leading-relaxed text-lg">
+                        <p className="text-gray-300 leading-relaxed mb-6">
                             {event.highlights}
                         </p>
 
-                        {/* Entry Fee Display */}
-                        <div className="mt-6 pt-6 border-t border-gray-700">
-                            <div className="flex items-center gap-3">
-                                <div className={`p-3 rounded-xl bg-gradient-to-br ${gradientColors} bg-opacity-20`}>
-                                    <FaMoneyBillWave className={`text-2xl bg-gradient-to-br ${gradientColors} bg-clip-text text-transparent`} />
+                        {/* Entry Fee */}
+                        <div className="pt-6 border-t border-gray-800">
+                            <div className="flex items-center gap-4">
+                                <div className="p-4 rounded-xl bg-gradient-to-br from-cyan-600 to-blue-600">
+                                    <FaMoneyBillWave className="text-2xl text-white" />
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-400">Entry Fee</p>
-                                    <p className="text-xl font-bold text-white">{event.fee}</p>
+                                    <p className="text-xl font-bold text-cyan-400">{event.fee}</p>
                                 </div>
                             </div>
                         </div>
@@ -324,73 +323,88 @@ const EventDetails = () => {
                 </div>
 
                 {/* Event Rounds */}
-                <div className="glass-strong rounded-2xl p-8 animate-fade-in-up stagger-4">
-                    <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                        <span className={`h-1 w-12 rounded-full bg-gradient-to-r ${gradientColors}`}></span>
+                <div className="bg-gray-900 rounded-2xl p-6 md:p-8">
+                    <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
+                        <span className="text-cyan-500">🎯</span>
                         Event Rounds
                     </h3>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        {event.events.map((item, index) => (
-                            <div key={index} className="relative group">
-                                <div className="glass rounded-xl p-6 h-full hover-lift transition-all duration-300">
-                                    {/* Number Badge */}
-                                    <div className={`absolute -top-3 -left-3 w-12 h-12 rounded-xl bg-gradient-to-br ${gradientColors} flex items-center justify-center font-bold text-xl shadow-lg`}>
-                                        {index + 1}
-                                    </div>
 
-                                    <h4 className="font-bold text-xl mb-3 mt-2 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
-                                        {item.title}
-                                    </h4>
-                                    <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-200">
-                                        {item.description}
-                                    </p>
+                    {/* Timeline */}
+                    <div className="relative">
+                        {/* Connecting Line */}
+                        <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500"></div>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {event.events.map((round, index) => (
+                                <div key={index} className="relative">
+                                    {/* Round Card */}
+                                    <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-750 transition-all">
+                                        {/* Number Badge */}
+                                        <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full mb-4 ${index === 0 ? 'bg-gradient-to-br from-cyan-500 to-blue-600' : 'bg-gradient-to-br from-purple-500 to-pink-600'
+                                            }`}>
+                                            <span className="text-xl font-bold">{index + 1}</span>
+                                        </div>
+
+                                        <h4 className="font-bold text-xl mb-3 text-white">
+                                            {round.title}
+                                        </h4>
+                                        <p className="text-gray-400">
+                                            {round.description}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
 
-                {/* Event Coordinators Section - UNIQUE DESIGN */}
-                <div className="glass-strong rounded-2xl p-8 animate-fade-in-up stagger-5">
+                {/* Event Coordinators */}
+                <div className="bg-gray-900 rounded-2xl p-6 md:p-8">
                     <h3 className="text-2xl font-bold mb-2 flex items-center gap-3">
-                        <span className={`h-1 w-12 rounded-full bg-gradient-to-r ${gradientColors}`}></span>
+                        <span className="text-cyan-500">👥</span>
                         Event Coordinators
                     </h3>
                     <p className="text-gray-400 mb-8">Get in touch with our event heads for any queries</p>
 
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {/* Main Coordinator Card */}
-                        <div className="group relative">
-                            <div className="glass rounded-2xl p-8 hover-lift transition-all duration-500 overflow-hidden">
-                                {/* Gradient Background Effect */}
-                                <div className={`absolute inset-0 bg-gradient-to-br ${gradientColors} opacity-0 group-hover:opacity-10 transition-opacity duration-500 -z-10`}></div>
-
-                                {/* Role Badge */}
-                                <div className={`inline-block px-4 py-1 rounded-full bg-gradient-to-r ${gradientColors} text-white text-sm font-semibold mb-4`}>
-                                    {event.coordinator.role}
-                                </div>
-
-                                {/* Profile Icon */}
+                    <div className="grid md:grid-cols-2 gap-6">
+                        {/* Main Coordinator */}
+                        <div className="group">
+                            <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-750 transition-all">
+                                {/* Profile Image */}
                                 <div className="mb-6 flex justify-center">
-                                    <div className={`relative p-6 rounded-2xl bg-gradient-to-br ${gradientColors} group-hover:scale-110 transition-transform duration-500`}>
-                                        <FaUserTie className="text-5xl text-white" />
-
-                                        {/* Pulse effect */}
-                                        <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${gradientColors} animate-ping opacity-20`}></div>
+                                    <div className="relative group-hover:scale-110 transition-transform">
+                                        {event.coordinator.image ? (
+                                            <img
+                                                src={event.coordinator.image}
+                                                alt={event.coordinator.name}
+                                                className="w-32 h-32 rounded-full object-cover border-4 border-gray-700"
+                                            />
+                                        ) : (
+                                            <div className="p-6 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600">
+                                                <FaUserTie className="text-4xl text-white" />
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
 
+                                {/* Badge */}
+                                <div className="flex justify-center mb-3">
+                                    <span className="px-4 py-1 rounded-full bg-cyan-500 text-white text-xs font-semibold uppercase">
+                                        Coordinator
+                                    </span>
+                                </div>
+
                                 {/* Name */}
-                                <h4 className="text-2xl font-bold text-center mb-2 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
+                                <h4 className="text-xl font-bold text-center mb-4 text-white">
                                     {event.coordinator.name}
                                 </h4>
 
                                 {/* Contact */}
-                                <div className="mt-6 flex items-center justify-center gap-3 p-4 rounded-xl bg-white/5 group-hover:bg-white/10 transition-colors duration-300">
-                                    <FaPhone className={`text-lg bg-gradient-to-br ${gradientColors} bg-clip-text text-transparent`} />
+                                <div className="flex items-center justify-center gap-3 p-3 rounded-lg bg-gray-900/50">
+                                    <FaPhone className="text-cyan-400" />
                                     <a
                                         href={`tel:${event.coordinator.contact}`}
-                                        className="text-lg font-mono text-gray-300 hover:text-white transition-colors duration-200"
+                                        className="font-mono text-gray-300 hover:text-white transition-colors"
                                     >
                                         {event.coordinator.contact}
                                     </a>
@@ -398,39 +412,45 @@ const EventDetails = () => {
                             </div>
                         </div>
 
-                        {/* Co-Coordinator Card */}
+                        {/* Co-Coordinator */}
                         {event.cocoordinator && (
-                            <div className="group relative">
-                                <div className="glass rounded-2xl p-8 hover-lift transition-all duration-500 overflow-hidden">
-                                    {/* Gradient Background Effect */}
-                                    <div className={`absolute inset-0 bg-gradient-to-br ${gradientColors} opacity-0 group-hover:opacity-10 transition-opacity duration-500 -z-10`}></div>
-
-                                    {/* Role Badge */}
-                                    <div className={`inline-block px-4 py-1 rounded-full bg-gradient-to-r ${gradientColors} text-white text-sm font-semibold mb-4`}>
-                                        {event.cocoordinator.role}
-                                    </div>
-
-                                    {/* Profile Icon */}
+                            <div className="group">
+                                <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-750 transition-all">
+                                    {/* Profile Image */}
                                     <div className="mb-6 flex justify-center">
-                                        <div className={`relative p-6 rounded-2xl bg-gradient-to-br ${gradientColors} group-hover:scale-110 transition-transform duration-500`}>
-                                            <FaUserTie className="text-5xl text-white" />
-
-                                            {/* Pulse effect */}
-                                            <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${gradientColors} animate-ping opacity-20`}></div>
+                                        <div className="relative group-hover:scale-110 transition-transform">
+                                            {event.cocoordinator.image ? (
+                                                <img
+                                                    src={event.cocoordinator.image}
+                                                    alt={event.cocoordinator.name}
+                                                    className="w-32 h-32 rounded-full object-cover border-4 border-gray-700"
+                                                />
+                                            ) : (
+                                                <div className="p-6 rounded-full bg-gradient-to-br from-purple-500 to-pink-600">
+                                                    <FaUserTie className="text-4xl text-white" />
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
 
+                                    {/* Badge */}
+                                    <div className="flex justify-center mb-3">
+                                        <span className="px-4 py-1 rounded-full bg-purple-500 text-white text-xs font-semibold uppercase">
+                                            Coordinator
+                                        </span>
+                                    </div>
+
                                     {/* Name */}
-                                    <h4 className="text-2xl font-bold text-center mb-2 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-emerald-400 transition-all duration-300">
+                                    <h4 className="text-xl font-bold text-center mb-4 text-white">
                                         {event.cocoordinator.name}
                                     </h4>
 
                                     {/* Contact */}
-                                    <div className="mt-6 flex items-center justify-center gap-3 p-4 rounded-xl bg-white/5 group-hover:bg-white/10 transition-colors duration-300">
-                                        <FaPhone className={`text-lg bg-gradient-to-br ${gradientColors} bg-clip-text text-transparent`} />
+                                    <div className="flex items-center justify-center gap-3 p-3 rounded-lg bg-gray-900/50">
+                                        <FaPhone className="text-purple-400" />
                                         <a
                                             href={`tel:${event.cocoordinator.contact}`}
-                                            className="text-lg font-mono text-gray-300 hover:text-white transition-colors duration-200"
+                                            className="font-mono text-gray-300 hover:text-white transition-colors"
                                         >
                                             {event.cocoordinator.contact}
                                         </a>

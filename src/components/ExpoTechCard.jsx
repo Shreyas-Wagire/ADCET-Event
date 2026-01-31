@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { FaCode, FaMicrophone, FaLightbulb, FaGamepad, FaFootballBall, FaMapMarkedAlt, FaBrain } from 'react-icons/fa'
+import { FaCode, FaComments, FaLightbulb, FaClipboardList, FaBrain, FaPhone } from 'react-icons/fa'
 
-const ExpoTechCard = ({ id = 1, title = "Event Title", description = "Event description", type = "technical" }) => {
+const ExpoTechCard = ({ id = 1, title = "Event Title", description = "Event description", type = "technical", coordinators = [] }) => {
     const navigate = useNavigate()
     const [tilt, setTilt] = useState({ x: 0, y: 0 })
 
@@ -32,13 +32,11 @@ const ExpoTechCard = ({ id = 1, title = "Event Title", description = "Event desc
 
     // Icon mapping for each event
     const eventIcons = {
-        1: FaBrain,        // Apti-Master
-        2: FaCode,         // Mini Hackathon
-        3: FaMicrophone,   // Group Discussion
-        4: FaLightbulb,    // Innoprotex
-        5: FaGamepad,      // BGMI
-        6: FaFootballBall, // Box Cricket
-        7: FaMapMarkedAlt  // Treasure Hunt
+        1: FaBrain,         // Apti-Master
+        2: FaCode,          // Mini Hackathon
+        3: FaComments,      // Group Discussion
+        4: FaLightbulb,     // Innoprotex
+        5: FaClipboardList  // GAT Master
     }
 
     const Icon = eventIcons[id] || FaLightbulb
@@ -52,15 +50,15 @@ const ExpoTechCard = ({ id = 1, title = "Event Title", description = "Event desc
         : "from-blue-600 to-emerald-600";
 
     const iconColor = type === "technical"
-        ? "from-purple-400 to-pink-400"
-        : "from-blue-400 to-emerald-400";
+        ? "text-purple-400"
+        : "text-blue-400";
 
     return (
         <div
             onClick={handleDiscoverClick}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="group relative m-4 h-[380px] w-[320px] cursor-pointer rounded-2xl p-8 text-white transition-all duration-500 hover:-translate-y-3 glass-strong"
+            className="group relative m-4 h-[380px] w-full max-w-[320px] cursor-pointer rounded-2xl p-8 text-white transition-all duration-500 hover:-translate-y-3 glass-strong"
             style={{
                 transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) translateY(${tilt.x !== 0 || tilt.y !== 0 ? '-12px' : '0'})`,
                 transition: tilt.x === 0 && tilt.y === 0 ? 'transform 0.5s ease' : 'none'
@@ -81,7 +79,7 @@ const ExpoTechCard = ({ id = 1, title = "Event Title", description = "Event desc
                     <div className="flex items-start justify-between mb-4">
                         {/* Event Icon */}
                         <div className={`p-3 rounded-xl bg-gradient-to-br ${cardStyles} group-hover:scale-110 transition-transform duration-300`}>
-                            <Icon className={`text-3xl bg-gradient-to-br ${iconColor} bg-clip-text text-transparent`} />
+                            <Icon className={`text-3xl ${iconColor} drop-shadow-lg`} />
                         </div>
 
                         {/* Event Type Badge */}
