@@ -22,7 +22,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <div className='flex items-center'>
                         <img
-                            className="w-14 h-14 md:w-16 md:h-16 cursor-pointer hover:scale-110 transition-transform duration-300"
+                            className="h-8 md:h-10 w-auto cursor-pointer hover:scale-110 transition-transform duration-300"
                             src={logo}
                             alt="ADCET Logo"
                         />
