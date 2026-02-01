@@ -257,7 +257,7 @@ const TeamHierarchy = () => {
             {/* Row 2: Non-Technical Events - 4 cards in a row */}
             <div className="mb-16">
                 <h3 className="text-2xl font-bold text-white text-center mb-8">Non-Technical Events</h3>
-                <div className="grid grid-cols-4 gap-8 max-w-6xl mx-auto px-4" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
+                <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto px-4">
                     {nonTechnicalHeads.map((member, idx) => (
                         <MemberCard key={idx} member={member} />
                     ))}
@@ -267,7 +267,7 @@ const TeamHierarchy = () => {
             {/* Row 3: Technical Events - 4 cards */}
             <div className="mb-12">
                 <h3 className="text-2xl font-bold text-white text-center mb-8">Technical Events</h3>
-                <div className="grid grid-cols-4 gap-8 max-w-6xl mx-auto px-4" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
+                <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto px-4">
                     {technicalHeads.map((member, idx) => (
                         <MemberCard key={idx} member={member} />
                     ))}
