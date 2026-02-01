@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import DisplayLine from './components/DisplayLine'
+import HeroSection from './components/HeroSection'
 import Divider from './components/Divider'
 import ExpoTechCard from './components/ExpoTechCard'
 import Footer from './components/Footer'
@@ -101,15 +101,18 @@ function App() {
             <Routes>
               <Route path="/" element={
                 <div className="py-8">
-                  <DisplayLine />
+                  <HeroSection />
                   <RegistrationCountdown />
                   <Divider />
 
                   {/* Technical Events Section */}
                   <div id="events-section" className="mb-16 scroll-mt-24">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in-up">
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                        Technical Events
+                      <span className="relative inline-block">
+                        <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400 blur-sm"></span>
+                        <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-50 to-gray-300">
+                          Technical Events
+                        </span>
                       </span>
                     </h2>
                     <div className="flex flex-wrap justify-center">
@@ -132,8 +135,11 @@ function App() {
                   {/* Non-Technical Events Section */}
                   <div className="mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in-up">
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-                        Non-Technical Events
+                      <span className="relative inline-block">
+                        <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400 blur-sm"></span>
+                        <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-50 to-gray-300">
+                          Non-Technical Events
+                        </span>
                       </span>
                     </h2>
                     <div className="flex flex-wrap justify-center">

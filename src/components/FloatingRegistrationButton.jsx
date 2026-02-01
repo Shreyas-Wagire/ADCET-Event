@@ -29,7 +29,7 @@ const FloatingRegistrationButton = () => {
     return (
         <button
             onClick={handleClick}
-            className={`fixed bottom-8 right-8 z-50 p-4 md:p-5 rounded-full bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 text-white shadow-2xl transition-all duration-500 group hover-scale ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
+            className={`fixed bottom-8 right-8 z-50 p-4 md:p-5 rounded-full bg-gradient-to-br from-purple-600 via-violet-700 to-indigo-800 text-white shadow-2xl transition-all duration-500 group hover-scale ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0 pointer-events-none'
                 }`}
             aria-label="Register for events"
         >
@@ -45,7 +45,7 @@ const FloatingRegistrationButton = () => {
             </div>
 
             {/* Glow effect */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 opacity-0 group-hover:opacity-50 blur-xl transition-opacity duration-300 -z-10" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500 to-violet-600 opacity-0 group-hover:opacity-50 blur-xl transition-opacity duration-300 -z-10" />
         </button>
     );
 };

@@ -42,11 +42,11 @@ const ExpoTechCard = ({ id = 1, title = "Event Title", description = "Event desc
     const Icon = eventIcons[id] || FaLightbulb
 
     const cardStyles = type === "technical"
-        ? "from-purple-500/30 to-pink-500/30"
+        ? "from-purple-500/30 to-violet-600/30"
         : "from-blue-500/30 to-emerald-500/30";
 
     const buttonStyles = type === "technical"
-        ? "from-purple-600 to-pink-600"
+        ? "from-purple-600 to-violet-700"
         : "from-blue-600 to-emerald-600";
 
     const iconColor = type === "technical"
@@ -94,7 +94,7 @@ const ExpoTechCard = ({ id = 1, title = "Event Title", description = "Event desc
                         <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                             {title}
                         </span>
-                        <div className={`mt-2 h-1 w-0 rounded-full bg-gradient-to-r ${type === "technical" ? "from-purple-500 to-pink-500" : "from-blue-500 to-emerald-500"
+                        <div className={`mt-2 h-1 w-0 rounded-full bg-gradient-to-r ${type === "technical" ? "from-purple-500 to-violet-600" : "from-blue-500 to-emerald-500"
                             } transition-all duration-500 group-hover:w-full`}></div>
                     </h3>
 

@@ -47,8 +47,11 @@ const FAQSection = () => {
         <section className="py-8 md:py-12 relative">
             <div className="max-w-4xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                    <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-                        Frequently Asked Questions
+                    <span className="relative inline-block">
+                        <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400 blur-sm"></span>
+                        <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-50 to-gray-300">
+                            Frequently Asked Questions
+                        </span>
                     </span>
                 </h2>
                 <p className="text-center text-gray-400 mb-12">

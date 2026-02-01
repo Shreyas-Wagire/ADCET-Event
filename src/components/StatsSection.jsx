@@ -105,8 +105,11 @@ const StatsSection = () => {
         <section ref={sectionRef} className="py-16 md:py-24">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 animate-fade-in-down">
-                    <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-                        Event Highlights
+                    <span className="relative inline-block">
+                        <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400 blur-sm"></span>
+                        <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-50 to-gray-300">
+                            Event Highlights
+                        </span>
                     </span>
                 </h2>
                 <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">

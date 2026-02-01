@@ -66,8 +66,11 @@ const PrizesSection = () => {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500 bg-clip-text text-transparent">
-                            Event Highlights & Prizes
+                        <span className="relative inline-block">
+                            <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400 blur-sm"></span>
+                            <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-50 to-gray-300">
+                                Event Highlights & Prizes
+                            </span>
                         </span>
                     </h2>
                     <p className="text-gray-400 text-lg mb-6">
