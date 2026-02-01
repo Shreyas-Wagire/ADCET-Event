@@ -46,8 +46,8 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 {/* Number box */}
-                <div className="relative bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-lg px-6 py-4 min-w-[80px] md:min-w-[100px]">
-                    <span className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-blue-500 tabular-nums">
+                <div className="relative bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-lg px-3 py-3 md:px-6 md:py-4 min-w-[60px] md:min-w-[100px]">
+                    <span className="text-2xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-blue-500 tabular-nums">
                         {String(value).padStart(2, '0')}
                     </span>
                 </div>
@@ -94,7 +94,7 @@ const HeroSection = () => {
                     <p className="text-base md:text-lg text-gray-300 font-medium">
                         Computer Science Department Presents
                     </p>
-                    <p className="text-sm md:text-base text-gray-400">
+                    <p className="text-xs sm:text-sm md:text-base text-gray-400 px-2 leading-relaxed">
                         Annasaheb Dange College of Engineering & Technology
                     </p>
                     <p className="text-xs md:text-sm text-gray-500">
@@ -103,7 +103,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Countdown Timer */}
-                <div className="flex justify-center gap-4 md:gap-6 mb-12">
+                <div className="flex justify-center gap-2 md:gap-6 mb-12">
                     <CountdownBox value={timeLeft.days} label="DAYS" />
                     <CountdownBox value={timeLeft.hours} label="HOURS" />
                     <CountdownBox value={timeLeft.minutes} label="MINUTES" />
