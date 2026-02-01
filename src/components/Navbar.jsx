@@ -47,7 +47,17 @@ const Navbar = () => {
                 : 'bg-transparent'
                 }`}>
                 <div className="container mx-auto px-4 md:px-8 lg:px-12">
-                    <div className="flex items-center justify-between h-24 md:h-28 w-full">
+                    <div className="flex items-center justify-between h-16 md:h-20 lg:h-24 w-full">
+                        {/* Mobile Logo - SPARK2K26 with Metallic Finish */}
+                        <div className="absolute left-1/2 -translate-x-1/2 lg:hidden">
+                            <span className="relative inline-block">
+                                <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400 blur-[2px]"></span>
+                                <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-50 to-gray-300 text-xl md:text-2xl font-black tracking-tight">
+                                    SPARK2K26
+                                </span>
+                            </span>
+                        </div>
+
                         {/* Empty left section for spacing */}
                         <div></div>
 
@@ -91,7 +101,7 @@ const Navbar = () => {
                                 className="lg:hidden p-2.5 rounded-xl hover:bg-white/10 transition-all duration-300 relative z-[60]"
                                 aria-label="Toggle menu"
                             >
-                                <div className="w-6 h-5 relative flex flex-col justify-between">
+                                <div className="w-5 md:w-6 h-4 md:h-5 relative flex flex-col justify-between">
                                     <span className={`w-full h-0.5 bg-white rounded-full transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''
                                         }`}></span>
                                     <span className={`w-full h-0.5 bg-white rounded-full transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''

@@ -64,9 +64,9 @@ const DisplayLine = () => {
                 <div className="relative w-full flex items-center justify-center mb-8 px-4">
 
                     {/* Rotating Department Ring with Central Orb */}
-                    <div className="absolute w-[280px] h-[280px] md:w-[450px] md:h-[450px]">
+                    <div className="absolute w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[450px] md:h-[450px]">
                         {/* Central Glowing Orb */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 md:w-40 md:h-40">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40">
                             {/* Multiple glow layers */}
                             <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 rounded-full blur-3xl opacity-25 animate-pulse-slow"></div>
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-400 to-pink-400 rounded-full blur-2xl opacity-35"></div>
@@ -81,7 +81,7 @@ const DisplayLine = () => {
                                     d="M 200, 200 m -140, 0 a 140,140 0 1,1 280,0 a 140,140 0 1,1 -280,0"
                                 />
                             </defs>
-                            <text className="text-[16px] md:text-[18px] fill-gray-400 tracking-[0.3em] font-light uppercase">
+                            <text className="text-[12px] sm:text-[14px] md:text-[18px] fill-gray-400 tracking-[0.3em] font-light uppercase">
                                 <textPath href="#circlePath" startOffset="0%">
                                     DEPARTMENT • ADCET • INNOVATION • REDEFINED • COMPUTER • SCHOOL •
                                 </textPath>
@@ -89,15 +89,15 @@ const DisplayLine = () => {
                         </svg>
 
                         {/* Days Countdown - Top - LIVE */}
-                        <div className="absolute -top-4 left-1/2 -translate-x-1/2 text-center">
-                            <div className="text-[10px] text-cyan-400 tracking-widest uppercase">DAYS</div>
-                            <div className="text-xl md:text-2xl font-bold text-white tabular-nums">{timeLeft.days}</div>
+                        <div className="absolute -top-8 sm:-top-6 md:-top-4 left-1/2 -translate-x-1/2 text-center">
+                            <div className="text-[9px] md:text-[10px] text-cyan-400 tracking-widest uppercase">DAYS</div>
+                            <div className="text-lg md:text-xl lg:text-2xl font-bold text-white tabular-nums">{timeLeft.days}</div>
                         </div>
 
                         {/* Hours Countdown - Bottom - LIVE */}
-                        <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-center">
-                            <div className="text-xl md:text-2xl font-bold text-white tabular-nums">{timeLeft.hours}</div>
-                            <div className="text-[10px] text-cyan-400 tracking-widest uppercase">HOURS</div>
+                        <div className="absolute -bottom-8 sm:-bottom-6 md:-bottom-4 left-1/2 -translate-x-1/2 text-center">
+                            <div className="text-lg md:text-xl lg:text-2xl font-bold text-white tabular-nums">{timeLeft.hours}</div>
+                            <div className="text-[9px] md:text-[10px] text-cyan-400 tracking-widest uppercase">HOURS</div>
                         </div>
                     </div>
 

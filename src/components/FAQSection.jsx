@@ -44,9 +44,9 @@ const FAQSection = () => {
     };
 
     return (
-        <section className="py-8 md:py-12 relative">
+        <section className="py-6 md:py-12 relative">
             <div className="max-w-4xl mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                <h2 className="text-2xl md:text-4xl font-bold text-center mb-2 md:mb-4">
                     <span className="relative inline-block">
                         <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400 blur-sm"></span>
                         <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-50 to-gray-300">
@@ -54,11 +54,11 @@ const FAQSection = () => {
                         </span>
                     </span>
                 </h2>
-                <p className="text-center text-gray-400 mb-12">
+                <p className="text-center text-gray-400 text-sm md:text-base mb-6 md:mb-12">
                     Got questions? We've got answers!
                 </p>
 
-                <div className="space-y-4">
+                <div className="space-y-2 md:space-y-4">
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
@@ -69,7 +69,7 @@ const FAQSection = () => {
                                 onClick={() => toggleFAQ(index)}
                                 className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors duration-200"
                             >
-                                <span className="text-lg font-semibold text-gray-200 pr-4">
+                                <span className="text-base md:text-lg font-semibold text-gray-200 pr-4">
                                     {faq.question}
                                 </span>
                                 <FaChevronDown
@@ -82,7 +82,7 @@ const FAQSection = () => {
                                 className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96' : 'max-h-0'
                                     }`}
                             >
-                                <div className="px-6 pb-5 pt-2">
+                                <div className="px-4 md:px-6 pb-3 md:pb-5 pt-2">
                                     <p className="text-gray-400 leading-relaxed">
                                         {faq.answer}
                                     </p>
