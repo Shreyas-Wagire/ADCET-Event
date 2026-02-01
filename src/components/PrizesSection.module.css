@@ -1,0 +1,45 @@
+/* Prize Cards Container */
+.prizeCardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Desktop: Horizontal layout */
+@media (min-width: 768px) {
+    .prizeCardsContainer {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 2.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Card widths */
+.prizeCard {
+    width: 100%;
+    max-width: 500px;
+}
+
+@media (min-width: 768px) {
+    .championCard {
+        width: 340px;
+        margin-bottom: 3rem;
+        order: 1;
+    }
+
+    .totalPrizeCard {
+        width: 400px;
+        order: 2;
+    }
+
+    .runnerUpCard {
+        width: 320px;
+        margin-bottom: 5rem;
+        order: 3;
+    }
+}

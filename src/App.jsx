@@ -15,6 +15,7 @@ import TeamHierarchy from './components/TeamHierarchy'
 import Particles from './components/Particles'
 import RegistrationCountdown from './components/RegistrationCountdown'
 import MediaPartner from './components/MediaPartner'
+import PrizesSection from './components/PrizesSection'
 
 const eventData = [
   {
@@ -103,6 +104,10 @@ function App() {
                 <div className="py-8">
                   <HeroSection />
                   <RegistrationCountdown />
+                  <Divider />
+
+                  {/* Prize Pool Section */}
+                  <PrizesSection />
                   <Divider />
 
                   {/* Technical Events Section */}

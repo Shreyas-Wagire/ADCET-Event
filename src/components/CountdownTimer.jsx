@@ -8,6 +8,7 @@ const CountdownTimer = ({ targetDate = "2026-02-14T09:00:00" }) => {
         seconds: 0
     });
 
+
     useEffect(() => {
         const calculateTimeLeft = () => {
             const difference = +new Date(targetDate) - +new Date();
