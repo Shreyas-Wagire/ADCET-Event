@@ -350,62 +350,112 @@ const EventDetails = () => {
                         <FaUsers className="text-2xl text-cyan-400" />
                         <h2 className="text-2xl font-bold">Event Coordinators</h2>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {/* Coordinator */}
-                        <div className="text-center">
-                            <div className="mb-4 flex justify-center">
-                                {event.coordinator.image ? (
-                                    <img
-                                        src={event.coordinator.image}
-                                        alt={event.coordinator.name}
-                                        className="w-32 h-32 rounded-full object-cover border-4 border-gray-700"
-                                    />
-                                ) : (
-                                    <div className="w-32 h-32 rounded-full bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
-                                        <FaUserTie className="text-4xl text-white" />
-                                    </div>
-                                )}
+                    <div className="grid md:grid-cols-2 gap-6">
+                        {/* Coordinator Card */}
+                        <div className="group relative glass-strong rounded-2xl p-6 border border-gray-700 hover:border-teal-500/50 transition-all duration-500 hover:-translate-y-2">
+                            {/* Shimmer effect on hover */}
+                            <div className="absolute inset-0 overflow-hidden rounded-2xl">
+                                <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
                             </div>
-                            <div className="mb-2 inline-block px-4 py-1 bg-teal-500/20 border border-teal-500/50 rounded-full text-xs font-bold uppercase">
-                                Coordinator
-                            </div>
-                            <h3 className="text-xl font-bold mb-4">{event.coordinator.name}</h3>
-                            <a
-                                href={`tel:${event.coordinator.contact}`}
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all"
-                            >
-                                <FaPhone className="text-teal-400" />
-                                <span className="font-mono text-sm">{event.coordinator.contact}</span>
-                            </a>
-                        </div>
 
-                        {/* Co-Coordinator */}
-                        {event.cocoordinator && (
-                            <div className="text-center">
+                            {/* Glow effect */}
+                            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-teal-500/20 to-cyan-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl"></div>
+
+                            <div className="relative text-center">
+                                {/* Profile Image */}
                                 <div className="mb-4 flex justify-center">
-                                    {event.cocoordinator.image ? (
-                                        <img
-                                            src={event.cocoordinator.image}
-                                            alt={event.cocoordinator.name}
-                                            className="w-32 h-32 rounded-full object-cover border-4 border-gray-700"
-                                        />
+                                    {event.coordinator.image ? (
+                                        <div className="relative">
+                                            <img
+                                                src={event.coordinator.image}
+                                                alt={event.coordinator.name}
+                                                className="w-28 h-28 rounded-full object-cover border-4 border-gray-700 group-hover:border-teal-500/50 transition-all duration-300 group-hover:scale-105"
+                                            />
+                                            {/* Ring effect */}
+                                            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-teal-500/20 to-cyan-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-lg"></div>
+                                        </div>
                                     ) : (
-                                        <div className="w-32 h-32 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                                        <div className="w-28 h-28 rounded-full bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                                             <FaUserTie className="text-4xl text-white" />
                                         </div>
                                     )}
                                 </div>
-                                <div className="mb-2 inline-block px-4 py-1 bg-purple-500/20 border border-purple-500/50 rounded-full text-xs font-bold uppercase">
-                                    Co-Coordinator
+
+                                {/* Badge */}
+                                <div className="mb-3 inline-block px-3 py-1 bg-teal-500/20 border border-teal-500/50 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    Coordinator
                                 </div>
-                                <h3 className="text-xl font-bold mb-4">{event.cocoordinator.name}</h3>
+
+                                {/* Name with gradient */}
+                                <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                                    {event.coordinator.name}
+                                </h3>
+
+                                {/* Contact Button */}
                                 <a
-                                    href={`tel:${event.cocoordinator.contact}`}
-                                    className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all"
+                                    href={`tel:${event.coordinator.contact}`}
+                                    className="relative inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-teal-600 to-cyan-700 rounded-xl hover:from-teal-500 hover:to-cyan-600 transition-all duration-300 overflow-hidden group/btn shadow-lg hover:shadow-teal-500/50"
                                 >
-                                    <FaPhone className="text-purple-400" />
-                                    <span className="font-mono text-sm">{event.cocoordinator.contact}</span>
+                                    <FaPhone className="text-white relative z-10" />
+                                    <span className="font-mono text-sm text-white relative z-10">{event.coordinator.contact}</span>
+                                    {/* Button shine effect */}
+                                    <div className="absolute inset-0 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
                                 </a>
+                            </div>
+                        </div>
+
+                        {/* Co-Coordinator Card */}
+                        {event.cocoordinator && (
+                            <div className="group relative glass-strong rounded-2xl p-6 border border-gray-700 hover:border-purple-500/50 transition-all duration-500 hover:-translate-y-2">
+                                {/* Shimmer effect on hover */}
+                                <div className="absolute inset-0 overflow-hidden rounded-2xl">
+                                    <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                                </div>
+
+                                {/* Glow effect */}
+                                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl"></div>
+
+                                <div className="relative text-center">
+                                    {/* Profile Image */}
+                                    <div className="mb-4 flex justify-center">
+                                        {event.cocoordinator.image ? (
+                                            <div className="relative">
+                                                <img
+                                                    src={event.cocoordinator.image}
+                                                    alt={event.cocoordinator.name}
+                                                    className="w-28 h-28 rounded-full object-cover border-4 border-gray-700 group-hover:border-purple-500/50 transition-all duration-300 group-hover:scale-105"
+                                                />
+                                                {/* Ring effect */}
+                                                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-lg"></div>
+                                            </div>
+                                        ) : (
+                                            <div className="w-28 h-28 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                                                <FaUserTie className="text-4xl text-white" />
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    {/* Badge */}
+                                    <div className="mb-3 inline-block px-3 py-1 bg-purple-500/20 border border-purple-500/50 rounded-full text-xs font-bold uppercase tracking-wider">
+                                        Coordinator
+                                    </div>
+
+                                    {/* Name with gradient */}
+                                    <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                                        {event.cocoordinator.name}
+                                    </h3>
+
+                                    {/* Contact Button */}
+                                    <a
+                                        href={`tel:${event.cocoordinator.contact}`}
+                                        className="relative inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-600 to-pink-700 rounded-xl hover:from-purple-500 hover:to-pink-600 transition-all duration-300 overflow-hidden group/btn shadow-lg hover:shadow-purple-500/50"
+                                    >
+                                        <FaPhone className="text-white relative z-10" />
+                                        <span className="font-mono text-sm text-white relative z-10">{event.cocoordinator.contact}</span>
+                                        {/* Button shine effect */}
+                                        <div className="absolute inset-0 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+                                    </a>
+                                </div>
                             </div>
                         )}
                     </div>
