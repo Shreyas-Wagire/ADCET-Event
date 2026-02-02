@@ -8,7 +8,6 @@ const CountdownTimer = ({ targetDate = "2026-02-14T09:00:00" }) => {
         seconds: 0
     });
 
-
     useEffect(() => {
         const calculateTimeLeft = () => {
             const difference = +new Date(targetDate) - +new Date();
@@ -33,31 +32,24 @@ const CountdownTimer = ({ targetDate = "2026-02-14T09:00:00" }) => {
 
     const TimeUnit = ({ value, label }) => (
         <div className="flex flex-col items-center">
-            <div className="relative">
-                <div className="glass-strong rounded-xl p-4 md:p-6 min-w-[70px] md:min-w-[100px] flex items-center justify-center group hover-scale">
-                    <span className="text-3xl md:text-5xl font-bold bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-gradient">
-                        {String(value).padStart(2, '0')}
-                    </span>
-                    {/* Glow effect on hover */}
-                    <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl" />
+            <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl px-4 py-5 md:px-6 md:py-6 min-w-[70px] md:min-w-[90px] flex items-center justify-center shadow-lg hover:border-gray-700 transition-all">
+                <div className="text-3xl md:text-5xl font-black text-white leading-none tracking-tight">
+                    {String(value).padStart(2, '0')}
                 </div>
             </div>
-            <span className="text-gray-400 text-sm md:text-base mt-2 uppercase tracking-wider">
+            <div className="text-xs font-semibold text-gray-400 uppercase tracking-widest mt-2">
                 {label}
-            </span>
+            </div>
         </div>
     );
 
     return (
-        <div className="w-full max-w-3xl mx-auto my-8 animate-fade-in-up">
-            <h3 className="text-center text-xl md:text-2xl font-semibold mb-6 text-gray-300">
-                Event Starts In
-            </h3>
-            <div className="flex justify-center gap-3 md:gap-6">
+        <div className="w-full max-w-4xl mx-auto py-8">
+            <div className="flex justify-center items-center gap-3 md:gap-5">
                 <TimeUnit value={timeLeft.days} label="Days" />
-                <TimeUnit value={timeLeft.hours} label="Hours" />
-                <TimeUnit value={timeLeft.minutes} label="Minutes" />
-                <TimeUnit value={timeLeft.seconds} label="Seconds" />
+                <TimeUnit value={timeLeft.hours} label="Hrs" />
+                <TimeUnit value={timeLeft.minutes} label="Min" />
+                <TimeUnit value={timeLeft.seconds} label="Sec" />
             </div>
         </div>
     );

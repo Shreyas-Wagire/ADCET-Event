@@ -14,7 +14,7 @@ const TeamHierarchy = () => {
         },
         {
             name: "Barsha Gupta",
-            role: "Student Co-Coordinator",
+            role: "Student Coordinator",
             contact: "+91 7889812227",
             image: "/head/barsha.jpeg",
             category: "overall",

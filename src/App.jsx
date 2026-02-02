@@ -22,7 +22,7 @@ const eventData = [
     id: 1,
     title: "Apti Master",
     description: "Experience the future of aptitude testing with challenging rounds, competitions, and innovative problem-solving. Join us for an exciting journey into the world of logical reasoning.",
-    type: "non-technical",
+    type: "technical",
     coordinators: [
       { name: "Ms. Tanavi", contact: "9022573574" },
       { name: "Mr. Prathmesh", contact: "9370657289" }
@@ -42,7 +42,7 @@ const eventData = [
     id: 3,
     title: "Group Discussion",
     description: "Showcase your communication skills and analytical thinking through engaging group discussions on contemporary topics.",
-    type: "non-technical",
+    type: "technical",
     coordinators: [
       { name: "Mr. Shreyas", contact: "7499321428" },
       { name: "Ms. Shreya", contact: "9356603103" }
@@ -62,7 +62,7 @@ const eventData = [
     id: 5,
     title: "GAT Master",
     description: "A comprehensive General Aptitude Test designed to evaluate students' overall analytical and reasoning abilities across various domains.",
-    type: "non-technical",
+    type: "technical",
     coordinators: [
       { name: "Mr. Pruthviraj", contact: "8262968845" },
       { name: "Ms. Manasi", contact: "9421277748" }
@@ -123,33 +123,6 @@ function App() {
                     <div className="flex flex-wrap justify-center">
                       {eventData
                         .filter(event => event.type === "technical")
-                        .map((event, index) => (
-                          <div key={event.id} className={`animate-fade-in-up stagger-${index + 1}`}>
-                            <ExpoTechCard
-                              id={event.id}
-                              title={event.title}
-                              description={event.description}
-                              type={event.type}
-                              coordinators={event.coordinators}
-                            />
-                          </div>
-                        ))}
-                    </div>
-                  </div>
-
-                  {/* Non-Technical Events Section */}
-                  <div className="mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in-up">
-                      <span className="relative inline-block">
-                        <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-gray-400 blur-sm"></span>
-                        <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-50 to-gray-300">
-                          Non-Technical Events
-                        </span>
-                      </span>
-                    </h2>
-                    <div className="flex flex-wrap justify-center">
-                      {eventData
-                        .filter(event => event.type === "non-technical")
                         .map((event, index) => (
                           <div key={event.id} className={`animate-fade-in-up stagger-${index + 1}`}>
                             <ExpoTechCard

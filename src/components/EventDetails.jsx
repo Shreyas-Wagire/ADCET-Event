@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { FaArrowLeft, FaPhone, FaUserTie, FaMoneyBillWave, FaBook, FaCheckCircle, FaWhatsapp, FaTrophy, FaClock, FaInfoCircle, FaStar, FaBullseye, FaUsers, FaAward, FaFlagCheckered } from 'react-icons/fa';
+import { FaArrowLeft, FaPhone, FaUserTie, FaMoneyBillWave, FaCheckCircle, FaTrophy, FaClock, FaInfoCircle, FaStar, FaAward, FaUsers, FaCalendarAlt } from 'react-icons/fa';
 import CountdownTimer from './CountdownTimer';
 
 const eventDetails = {
@@ -37,7 +36,7 @@ const eventDetails = {
             image: "/head/PS.jpeg"
         },
         fee: "₹100 per participant",
-        type: "non-technical",
+        type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
         backgroundImage: "/background/apti-master.png"
     },
@@ -109,7 +108,7 @@ const eventDetails = {
             image: "/head/shreyas.jpg"
         },
         fee: "₹100 per participant",
-        type: "non-technical",
+        type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
         backgroundImage: "/background/gd.png"
     },
@@ -177,7 +176,7 @@ const eventDetails = {
             image: "/head/pruthviraj.jpeg"
         },
         fee: "₹200 per team",
-        type: "non-technical",
+        type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
         backgroundImage: "/background/gat-master.png"
     }
@@ -194,9 +193,10 @@ const EventDetails = () => {
 
     if (!event) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-gray-950">
+            <div className="min-h-screen flex items-center justify-center bg-gray-950 text-white">
                 <div className="text-center">
-                    <h2 className="text-2xl font-bold mb-4 text-white">Event not found</h2>
+                    <h2 className="text-3xl font-bold mb-4">Event Not Found</h2>
+                    <p className="text-gray-400 mb-6">The event you're looking for doesn't exist.</p>
                     <button
                         onClick={() => navigate('/')}
                         className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all hover:scale-105"
@@ -209,391 +209,217 @@ const EventDetails = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white pb-20 pt-20">
-            {/* Modern Hero Section with Glassmorphism */}
-            <div className="relative overflow-hidden mx-2 md:mx-8 mb-8 md:mb-12">
-                {/* Background Image */}
+        <div className="min-h-screen bg-gray-950 text-white">
+            {/* Minimal Hero Section */}
+            <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24 md:pt-0">
+                {/* Background with darker overlay */}
                 <div
-                    className="absolute inset-0 bg-cover bg-center rounded-2xl md:rounded-3xl"
+                    className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url('${event.backgroundImage}')` }}
                 ></div>
+                <div className="absolute inset-0 bg-black/75"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>
 
-                {/* Dark Overlay for better text contrast */}
-                <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70 rounded-2xl md:rounded-3xl"></div>
+                {/* Back Button */}
+                <button
+                    onClick={() => navigate('/')}
+                    className="absolute top-16 left-4 md:top-6 md:left-6 z-30 px-4 py-2 md:px-5 md:py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl flex items-center gap-2 text-white hover:bg-white/20 transition-all"
+                >
+                    <FaArrowLeft className="text-sm md:text-base" />
+                    <span className="text-xs md:text-sm font-medium">Back</span>
+                </button>
 
-                {/* Animated Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-cyan-600/30 via-transparent to-purple-600/30 animate-gradient rounded-2xl md:rounded-3xl"></div>
+                {/* Type Badge */}
+                <div className={`absolute top-16 right-4 md:top-6 md:right-6 z-30 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs font-bold uppercase ${event.type === 'technical' ? 'bg-teal-500' : 'bg-amber-500'
+                    }`}>
+                    {event.type === 'technical' ? 'Technical' : 'Non-Technical'}
+                </div>
 
-                {/* Glass Morphism Layer */}
-                <div className="absolute inset-0 backdrop-blur-sm bg-white/5 rounded-2xl md:rounded-3xl"></div>
+                {/* Hero Content */}
+                <div className="relative z-20 max-w-4xl mx-auto px-6 text-center">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4">{event.title}</h1>
+                    <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 md:mb-12">{event.subtitle}</p>
 
-                {/* Decorative Elements */}
-                <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-cyan-400/30 to-transparent rounded-full blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-purple-400/30 to-transparent rounded-full blur-3xl"></div>
-
-                {/* Content */}
-                <div className="relative z-10 p-4 sm:p-6 md:p-12">
-                    {/* Back Button - Modern Glass */}
-                    <button
-                        onClick={() => navigate('/')}
-                        className="mb-6 md:mb-8 px-4 md:px-6 py-2 md:py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl flex items-center gap-2 md:gap-3 text-white hover:bg-white/20 transition-all group text-sm md:text-base"
-                    >
-                        <FaArrowLeft className="group-hover:-translate-x-1 transition-transform text-sm md:text-base" />
-                        <span className="font-medium">Back to Events</span>
-                    </button>
-
-                    {/* Type Badge - Floating Glass pill - Repositioned for mobile */}
-                    <div className="mb-4 md:absolute md:top-8 md:right-8 z-20">
-                        <span className={`inline-flex px-4 py-2 md:px-6 md:py-3 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider shadow-2xl backdrop-blur-md border-2 transition-all duration-300 hover:scale-110 items-center gap-2 ${event.type === 'technical'
-                            ? 'bg-gradient-to-r from-teal-600/90 to-emerald-700/90 text-white border-teal-400/50'
-                            : 'bg-gradient-to-r from-amber-600/90 to-orange-700/90 text-white border-amber-400/50'
-                            }`}>
-                            {event.type === 'technical' ? <><FaBook className="text-sm md:text-lg" /> Technical</> : <><FaBullseye className="text-sm md:text-lg" /> Non-Technical</>}
-                        </span>
+                    {/* Quick Info */}
+                    <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-8 md:mb-12">
+                        <div className="flex items-center gap-2 text-xs md:text-sm">
+                            <FaCalendarAlt className="text-teal-400" />
+                            <span>14th Feb 2026</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-xs md:text-sm font-bold">
+                            <FaMoneyBillWave className="text-emerald-400" />
+                            <span>{event.fee}</span>
+                        </div>
                     </div>
 
-                    {/* Title - Large and Bold */}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-3 md:mb-4 text-white drop-shadow-2xl leading-tight">
-                        {event.title}
-                    </h1>
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-white/90 mb-6 md:mb-10 leading-relaxed">
-                        {event.subtitle}
-                    </p>
-
-                    {/* CTA Buttons - Premium Style - Mobile Optimized */}
-                    <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4">
+                    {/* CTAs */}
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
                         <button
                             onClick={handleRegister}
-                            className="group w-full sm:w-auto px-6 md:px-10 py-3 md:py-4 bg-gradient-to-r from-slate-100 to-slate-50 text-slate-900 rounded-xl md:rounded-2xl font-bold text-base md:text-lg shadow-2xl hover:shadow-slate-400/30 transition-all duration-300 hover:scale-105 md:hover:scale-110 flex items-center justify-center gap-2 md:gap-3 border-2 border-slate-200"
+                            className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-teal-500 to-emerald-600 hover:from-teal-400 hover:to-emerald-500 rounded-xl font-bold text-sm md:text-base shadow-xl hover:shadow-2xl transition-all hover:scale-105"
                         >
-                            <FaTrophy className="text-xl md:text-2xl text-amber-600 group-hover:rotate-12 transition-transform" />
                             Register Now
                         </button>
-                        {/* View Rules - Glass Button */}
                         <a
                             href="https://drive.google.com/drive/folders/16J1xM3P9myi2vcOLEBYdAbYqYy0xW2eW?usp=drive_link"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group w-full sm:w-auto px-6 md:px-10 py-3 md:py-4 bg-slate-800/40 backdrop-blur-md text-slate-100 rounded-xl md:rounded-2xl font-semibold text-base md:text-lg border-2 border-slate-600/30 hover:bg-slate-700/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 md:gap-3"
+                            className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-white/5 border border-white/20 rounded-xl font-semibold text-sm md:text-base hover:bg-white/10 transition-all"
                         >
-                            <FaBook className="text-lg md:text-xl text-teal-400" />
                             View Rules
-                        </a>
-                        <a
-                            href="https://whatsapp.com/channel/0029Vb728qhFSAt4kEH0jM1q"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-emerald-600/20 to-green-700/20 backdrop-blur-md border-2 border-emerald-500/50 text-white rounded-xl font-semibold text-base md:text-lg hover:from-emerald-600/30 hover:to-green-700/30 transition-all flex items-center justify-center gap-2 hover:scale-105"
-                        >
-                            <FaWhatsapp className="text-xl md:text-2xl" />
-                            <span>Join Updates</span>
                         </a>
                     </div>
                 </div>
             </div>
 
             {/* Countdown Timer */}
-            <div className="mx-4 md:mx-8 mb-12">
+            <div className="px-6 py-8 relative z-10">
                 <CountdownTimer targetDate="2026-02-14T09:00:00" />
             </div>
 
-            {/* Main Content - Premium Cards Layout */}
-            <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-8 space-y-6 md:space-y-8">
-                {/* About Section - Glass Card */}
-                <div className="group relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-white/10 p-5 sm:p-6 md:p-8 lg:p-10 hover:border-teal-500/50 transition-all duration-500">
-                    <div className="absolute inset-0 bg-gradient-to-br from-teal-500/0 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative">
-                        <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-                            <div className="p-3 md:p-4 bg-gradient-to-br from-teal-600 to-emerald-700 rounded-xl md:rounded-2xl shadow-lg shadow-teal-600/50">
-                                <FaInfoCircle className="text-2xl md:text-3xl text-white" />
-                            </div>
-                            <h3 className="text-2xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-teal-400 to-emerald-500 bg-clip-text text-transparent">
-                                About the Event
-                            </h3>
-                        </div>
-                        <p className="text-gray-300 text-base md:text-lg leading-relaxed md:pl-20">
-                            {event.description}
-                        </p>
-                    </div>
-                </div>
+            {/* Main Content */}
+            <div className="max-w-6xl mx-auto px-6 py-20 space-y-16">
 
-                {/* Two Column Layout */}
-                <div className="grid lg:grid-cols-2 gap-5 md:gap-8">
-                    {/* Why Participate - Glass Card */}
-                    <div className="group relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-white/10 p-5 sm:p-6 md:p-8 hover:border-amber-500/50 transition-all duration-500">
-                        <div className="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="relative">
-                            <div className="flex items-center gap-3 md:gap-4 mb-5 md:mb-8">
-                                <div className="p-3 md:p-4 bg-gradient-to-br from-amber-600 to-orange-700 rounded-xl md:rounded-2xl shadow-lg shadow-amber-600/50">
-                                    <FaAward className="text-2xl md:text-3xl text-white" />
-                                </div>
-                                <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
-                                    Why Participate?
-                                </h3>
-                            </div>
-                            <ul className="space-y-3 md:space-y-4">
-                                {event.why.map((reason, index) => (
-                                    <li key={index} className="flex items-start gap-3 md:gap-4 p-3 md:p-4 rounded-xl bg-slate-800/30 hover:bg-slate-700/40 transition-colors border border-slate-700/30">
-                                        <div className="p-1.5 md:p-2 bg-gradient-to-br from-amber-600 to-orange-700 rounded-lg mt-0.5 flex-shrink-0">
-                                            <FaCheckCircle className="text-white text-base md:text-lg" />
-                                        </div>
-                                        <span className="text-gray-200 text-sm md:text-base flex-1">{reason}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                {/* About + Highlights */}
+                <div className="grid md:grid-cols-2 gap-8">
+                    {/* About */}
+                    <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
+                        <div className="flex items-center gap-3 mb-4">
+                            <FaInfoCircle className="text-2xl text-teal-400" />
+                            <h2 className="text-2xl font-bold">About</h2>
                         </div>
+                        <p className="text-gray-300 leading-relaxed">{event.description}</p>
                     </div>
 
-                    {/* Key Highlights - Glass Card */}
-                    <div className="group relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl border border-white/10 p-5 sm:p-6 md:p-8 hover:border-emerald-500/50 transition-all duration-500">
-                        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="relative">
-                            <div className="flex items-center gap-3 md:gap-4 mb-5 md:mb-8">
-                                <div className="p-3 md:p-4 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-xl md:rounded-2xl shadow-lg shadow-emerald-600/50">
-                                    <FaFlagCheckered className="text-2xl md:text-3xl text-white" />
-                                </div>
-                                <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
-                                    Key Highlights
-                                </h3>
-                            </div>
-                            <p className="text-gray-200 text-sm md:text-base leading-relaxed mb-6 md:mb-8">
-                                {event.highlights}
+                    {/* Highlights */}
+                    <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
+                        <div className="flex items-center gap-3 mb-4">
+                            <FaStar className="text-2xl text-amber-400" />
+                            <h2 className="text-2xl font-bold">Highlights</h2>
+                        </div>
+                        <p className="text-gray-300 leading-relaxed mb-6">{event.highlights}</p>
+                        <div className="pt-4 border-t border-gray-800">
+                            <p className="text-sm text-gray-400 mb-1">Entry Fee</p>
+                            <p className="text-3xl font-black bg-gradient-to-r from-teal-400 to-emerald-500 bg-clip-text text-transparent">
+                                {event.fee}
                             </p>
-
-                            {/* Entry Fee - Featured */}
-                            <div className="pt-4 md:pt-6 border-t border-white/10">
-                                <div className="mb-4 md:mb-6 p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-r from-teal-700/20 to-emerald-700/20 border border-teal-600/30">
-                                    <div className="flex items-center gap-2 md:gap-3 mb-2">
-                                        <FaMoneyBillWave className="text-2xl md:text-3xl text-teal-400" />
-                                        <p className="text-xs md:text-sm text-slate-400 uppercase tracking-wider">Entry Fee</p>
-                                    </div>
-                                    <p className="text-3xl md:text-4xl font-black bg-gradient-to-r from-teal-400 to-emerald-500 bg-clip-text text-transparent">
-                                        {event.fee}
-                                    </p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Event Rounds - Premium Timeline Design */}
-                <div className="relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl border border-slate-700/30 p-5 sm:p-6 md:p-8 lg:p-10">
-                    <div className="mb-6 md:mb-8">
-                        <div className="flex items-center gap-3 md:gap-4 mb-2">
-                            <div className="p-3 md:p-4 bg-gradient-to-br from-teal-600 to-teal-700 rounded-xl md:rounded-2xl shadow-lg shadow-teal-600/30">
-                                <FaClock className="text-2xl md:text-3xl text-white" />
-                            </div>
-                            <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-teal-400 to-emerald-500 bg-clip-text text-transparent">
-                                Event Rounds
-                            </h3>
-                        </div>
+                {/* Why Participate */}
+                <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
+                    <div className="flex items-center gap-3 mb-6">
+                        <FaAward className="text-2xl text-amber-400" />
+                        <h2 className="text-2xl font-bold">Why Participate?</h2>
                     </div>
-
-                    {/* Timeline */}
-                    <div className="relative">
-                        {/* Connecting Line - Gradient */}
-                        <div className="hidden lg:block absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 via-emerald-500 to-amber-500 rounded-full opacity-50"></div>
-
-                        <div className="grid lg:grid-cols-2 gap-5 md:gap-8">
-                            {event.events.map((round, index) => (
-                                <div key={index} className="group relative">
-                                    <div className="relative overflow-hidden rounded-xl md:rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700/30 p-5 md:p-8 hover:scale-105 hover:border-teal-600/50 transition-all duration-500 hover:shadow-2xl">
-                                        {/* Round Number Badge - Large Floating */}
-                                        <div className="absolute -top-4 -right-4 md:-top-6 md:-right-6 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-teal-600 to-emerald-700 rounded-full flex items-center justify-center text-xl md:text-2xl font-black text-white shadow-2xl shadow-teal-600/30 group-hover:scale-125 transition-transform">
-                                            {index + 1}
-                                        </div>
-
-                                        <div className="flex items-start gap-3 md:gap-6">
-                                            <div className="p-2.5 md:p-4 bg-gradient-to-br from-amber-600 to-orange-700 rounded-xl md:rounded-2xl shadow-lg flex-shrink-0">
-                                                <FaFlagCheckered className="text-2xl md:text-3xl text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="text-lg md:text-2xl font-bold text-slate-100 mb-2 md:mb-3">{round.title}</h4>
-                                                <p className="text-slate-300 text-sm md:text-lg leading-relaxed">{round.description}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                        {event.why.map((reason, index) => (
+                            <div key={index} className="flex items-center gap-3 p-4 bg-gray-800/50 rounded-lg">
+                                <FaCheckCircle className="text-teal-400 flex-shrink-0" />
+                                <span className="text-gray-300">{reason}</span>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
-                {/* Event Coordinators - Premium Metallic Design */}
-                <div className="relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br from-slate-900/80 to-slate-950/80 backdrop-blur-xl border border-slate-700/50 p-5 sm:p-6 md:p-8 lg:p-10">
-                    {/* Metallic shine overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-400/5 to-transparent -skew-x-12 animate-pulse pointer-events-none"></div>
-
-                    <div className="relative z-10 mb-6 md:mb-10">
-                        <div className="flex items-center gap-3 md:gap-4 mb-2">
-                            <div className="relative p-3 md:p-4 rounded-xl md:rounded-2xl overflow-hidden group">
-                                {/* Metallic background */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-slate-400 via-slate-300 to-slate-500 opacity-90"></div>
-                                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent animate-pulse"></div>
-                                <FaUsers className="relative text-2xl md:text-3xl text-slate-800" />
-                            </div>
-                            <div>
-                                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black bg-gradient-to-r from-slate-300 via-slate-100 to-slate-400 bg-clip-text text-transparent drop-shadow-lg">
-                                    Meet Your Event Leaders
-                                </h3>
-                                <p className="text-slate-400 mt-1 text-xs md:text-base">Connect with our coordinators for guidance and support</p>
-                            </div>
-                        </div>
+                {/* Event Rounds */}
+                <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
+                    <div className="flex items-center gap-3 mb-8">
+                        <FaClock className="text-2xl text-purple-400" />
+                        <h2 className="text-2xl font-bold">Event Rounds</h2>
                     </div>
-
-                    <div className="grid lg:grid-cols-2 gap-5 md:gap-8">
-                        {/* Main Coordinator - Premium Metallic Card */}
-                        <div className="group relative">
-                            {/* 3D Card Effect */}
-                            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm border-2 border-slate-600/30 p-6 transform transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl">
-                                {/* Metallic shine effect - animated */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-slate-300/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:animate-pulse"></div>
-
-                                {/* Content */}
-                                <div className="relative z-10">
-                                    {/* Profile Image */}
-                                    <div className="mb-6 flex justify-center">
-                                        <div className="relative group-hover:scale-110 transition-all duration-500">
-                                            {event.coordinator.image ? (
-                                                <div className="relative">
-                                                    <img
-                                                        src={event.coordinator.image}
-                                                        alt={event.coordinator.name}
-                                                        className="w-36 h-36 rounded-full object-cover border-4 border-gray-700/50 shadow-2xl"
-                                                    />
-                                                    {/* Metallic gloss overlay */}
-                                                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/20 via-transparent to-transparent"></div>
-                                                </div>
-                                            ) : (
-                                                <div className="relative p-8 rounded-full bg-gradient-to-br from-gray-300 via-gray-100 to-gray-400 shadow-2xl">
-                                                    <FaUserTie className="text-5xl text-gray-700" />
-                                                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/30 via-transparent to-transparent"></div>
-                                                </div>
-                                            )}
-                                        </div>
+                    <div className={`grid ${event.events.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'} gap-6`}>
+                        {event.events.map((round, index) => (
+                            <div key={index} className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-teal-500/50 transition-all">
+                                <div className="flex items-center gap-3 mb-3">
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-teal-500 to-purple-600 flex items-center justify-center text-sm font-black">
+                                        {index + 1}
                                     </div>
-
-                                    {/* Badge - Metallic Chrome */}
-                                    <div className="flex justify-center mb-5">
-                                        <div className="relative px-6 py-2 rounded-full overflow-hidden group/badge">
-                                            {/* Metallic background layers */}
-                                            <div className="absolute inset-0 bg-gradient-to-r from-slate-400 via-slate-200 to-slate-400"></div>
-                                            <div className="absolute inset-0 bg-gradient-to-r from-teal-400/50 via-emerald-500/50 to-teal-400/50 opacity-0 group-hover/badge:opacity-100 transition-opacity"></div>
-                                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -skew-x-12 group-hover/badge:animate-pulse"></div>
-
-                                            <span className="relative text-sm font-black uppercase tracking-wider text-slate-800 drop-shadow-sm flex items-center gap-2">
-                                                <FaStar className="text-amber-600" /> Coordinator
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    {/* Name - Metallic Text */}
-                                    <h4 className="text-3xl font-black text-center mb-6 bg-gradient-to-r from-slate-300 via-slate-100 to-slate-300 bg-clip-text text-transparent drop-shadow-lg">
-                                        {event.coordinator.name}
-                                    </h4>
-
-                                    {/* Contact - Premium Metallic Style */}
-                                    <div className="relative group/contact overflow-hidden rounded-xl bg-gradient-to-r from-gray-800/50 to-gray-900/50 border border-gray-600/30 p-4 hover:border-teal-500/50 transition-all">
-                                        {/* Shine effect */}
-                                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover/contact:translate-x-full transition-transform duration-1000"></div>
-
-                                        <div className="relative flex items-center justify-center gap-4">
-                                            <div className="p-3 bg-gradient-to-br from-teal-400 via-emerald-500 to-teal-600 rounded-lg shadow-lg">
-                                                <FaPhone className="text-white text-lg" />
-                                            </div>
-                                            <a
-                                                href={`tel:${event.coordinator.contact}`}
-                                                className="font-mono text-xl font-bold bg-gradient-to-r from-slate-300 to-slate-100 bg-clip-text text-transparent hover:from-teal-400 hover:to-emerald-500 transition-all"
-                                            >
-                                                {event.coordinator.contact}
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    {/* Decorative corner accents */}
-                                    <div className="absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-slate-600/40 rounded-tr-2xl"></div>
-                                    <div className="absolute bottom-4 left-4 w-16 h-16 border-b-2 border-l-2 border-slate-600/40 rounded-bl-2xl"></div>
+                                    <h3 className="text-lg font-bold">{round.title}</h3>
                                 </div>
+                                <p className="text-gray-400 text-sm">{round.description}</p>
                             </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Coordinators */}
+                <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
+                    <div className="flex items-center gap-3 mb-8">
+                        <FaUsers className="text-2xl text-cyan-400" />
+                        <h2 className="text-2xl font-bold">Event Coordinators</h2>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {/* Coordinator */}
+                        <div className="text-center">
+                            <div className="mb-4 flex justify-center">
+                                {event.coordinator.image ? (
+                                    <img
+                                        src={event.coordinator.image}
+                                        alt={event.coordinator.name}
+                                        className="w-32 h-32 rounded-full object-cover border-4 border-gray-700"
+                                    />
+                                ) : (
+                                    <div className="w-32 h-32 rounded-full bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
+                                        <FaUserTie className="text-4xl text-white" />
+                                    </div>
+                                )}
+                            </div>
+                            <div className="mb-2 inline-block px-4 py-1 bg-teal-500/20 border border-teal-500/50 rounded-full text-xs font-bold uppercase">
+                                Coordinator
+                            </div>
+                            <h3 className="text-xl font-bold mb-4">{event.coordinator.name}</h3>
+                            <a
+                                href={`tel:${event.coordinator.contact}`}
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all"
+                            >
+                                <FaPhone className="text-teal-400" />
+                                <span className="font-mono text-sm">{event.coordinator.contact}</span>
+                            </a>
                         </div>
 
-                        {/* Co-Coordinator - Premium Metallic Card */}
+                        {/* Co-Coordinator */}
                         {event.cocoordinator && (
-                            <div className="group relative">
-                                {/* 3D Card Effect */}
-                                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm border-2 border-slate-600/30 p-6 transform transition-all duration-500 hover:scale-105 hover:-rotate-1 hover:shadow-2xl">
-                                    {/* Metallic shine effect - animated */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-slate-300/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:animate-pulse"></div>
-
-                                    {/* Content */}
-                                    <div className="relative z-10">
-                                        {/* Profile Image */}
-                                        <div className="mb-6 flex justify-center">
-                                            <div className="relative group-hover:scale-110 transition-all duration-500">
-                                                {event.cocoordinator.image ? (
-                                                    <div className="relative">
-                                                        <img
-                                                            src={event.cocoordinator.image}
-                                                            alt={event.cocoordinator.name}
-                                                            className="w-36 h-36 rounded-full object-cover border-4 border-gray-700/50 shadow-2xl"
-                                                        />
-                                                        {/* Metallic gloss overlay */}
-                                                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/20 via-transparent to-transparent"></div>
-                                                    </div>
-                                                ) : (
-                                                    <div className="relative p-8 rounded-full bg-gradient-to-br from-gray-300 via-gray-100 to-gray-400 shadow-2xl">
-                                                        <FaUserTie className="text-5xl text-gray-700" />
-                                                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/30 via-transparent to-transparent"></div>
-                                                    </div>
-                                                )}
-                                            </div>
+                            <div className="text-center">
+                                <div className="mb-4 flex justify-center">
+                                    {event.cocoordinator.image ? (
+                                        <img
+                                            src={event.cocoordinator.image}
+                                            alt={event.cocoordinator.name}
+                                            className="w-32 h-32 rounded-full object-cover border-4 border-gray-700"
+                                        />
+                                    ) : (
+                                        <div className="w-32 h-32 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                                            <FaUserTie className="text-4xl text-white" />
                                         </div>
-
-                                        {/* Badge - Metallic Chrome */}
-                                        <div className="flex justify-center mb-5">
-                                            <div className="relative px-6 py-2 rounded-full overflow-hidden group/badge">
-                                                {/* Metallic background layers */}
-                                                <div className="absolute inset-0 bg-gradient-to-r from-slate-400 via-slate-200 to-slate-400"></div>
-                                                <div className="absolute inset-0 bg-gradient-to-r from-amber-400/50 via-orange-500/50 to-amber-400/50 opacity-0 group-hover/badge:opacity-100 transition-opacity"></div>
-                                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -skew-x-12 group-hover/badge:animate-pulse"></div>
-
-                                                <span className="relative text-sm font-black uppercase tracking-wider text-slate-800 drop-shadow-sm flex items-center gap-2">
-                                                    <FaUserTie className="text-amber-600" /> Coordinator
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        {/* Name - Metallic Text */}
-                                        <h4 className="text-3xl font-black text-center mb-6 bg-gradient-to-r from-slate-300 via-slate-100 to-slate-300 bg-clip-text text-transparent drop-shadow-lg">
-                                            {event.cocoordinator.name}
-                                        </h4>
-
-                                        {/* Contact - Premium Metallic Style */}
-                                        <div className="relative group/contact overflow-hidden rounded-xl bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-slate-600/30 p-4 hover:border-amber-600/50 transition-all">
-                                            {/* Shine effect */}
-                                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-300/10 to-transparent -translate-x-full group-hover/contact:translate-x-full transition-transform duration-1000"></div>
-
-                                            <div className="relative flex items-center justify-center gap-4">
-                                                <div className="p-3 bg-gradient-to-br from-amber-600 via-orange-600 to-amber-700 rounded-lg shadow-lg">
-                                                    <FaPhone className="text-white text-lg" />
-                                                </div>
-                                                <a
-                                                    href={`tel:${event.cocoordinator.contact}`}
-                                                    className="font-mono text-xl font-bold bg-gradient-to-r from-slate-300 to-slate-100 bg-clip-text text-transparent hover:from-amber-400 hover:to-orange-500 transition-all"
-                                                >
-                                                    {event.cocoordinator.contact}
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        {/* Decorative corner accents */}
-                                        <div className="absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-slate-600/40 rounded-tr-2xl"></div>
-                                        <div className="absolute bottom-4 left-4 w-16 h-16 border-b-2 border-l-2 border-slate-600/40 rounded-bl-2xl"></div>
-                                    </div>
+                                    )}
                                 </div>
+                                <div className="mb-2 inline-block px-4 py-1 bg-purple-500/20 border border-purple-500/50 rounded-full text-xs font-bold uppercase">
+                                    Co-Coordinator
+                                </div>
+                                <h3 className="text-xl font-bold mb-4">{event.cocoordinator.name}</h3>
+                                <a
+                                    href={`tel:${event.cocoordinator.contact}`}
+                                    className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all"
+                                >
+                                    <FaPhone className="text-purple-400" />
+                                    <span className="font-mono text-sm">{event.cocoordinator.contact}</span>
+                                </a>
                             </div>
                         )}
                     </div>
+                </div>
+
+                {/* Final CTA */}
+                <div className="text-center pt-8">
+                    <button
+                        onClick={handleRegister}
+                        className="px-12 py-5 bg-gradient-to-r from-teal-500 to-emerald-600 hover:from-teal-400 hover:to-emerald-500 rounded-xl font-black text-lg shadow-xl hover:shadow-2xl transition-all hover:scale-105 inline-flex items-center gap-3"
+                    >
+                        <FaTrophy className="text-xl" />
+                        <span>Register Now</span>
+                    </button>
                 </div>
             </div>
         </div>

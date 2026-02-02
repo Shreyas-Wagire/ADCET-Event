@@ -94,7 +94,7 @@ export const EVENT_DATA = [
     id: 3,
     title: "Group Discussion",
     description: "Showcase your communication skills and analytical thinking through engaging group discussions on contemporary topics.",
-    type: "non-technical"
+    type: "technical"
   },
   {
     id: 4,
@@ -106,19 +106,19 @@ export const EVENT_DATA = [
     id: 5,
     title: "BGMI",
     description: "Experience the thrill of competitive mobile gaming in this action-packed BGMI tournament.",
-    type: "non-technical"
+    type: "technical"
   },
   {
     id: 6,
     title: "Box Cricket",
     description: "Experience cricket in a unique format with special rules and exciting gameplay in a compact arena.",
-    type: "non-technical"
+    type: "technical"
   },
   {
     id: 7,
     title: "Treasure Hunt",
     description: "An exciting treasure hunt that combines problem-solving, teamwork, and adventure across the campus.",
-    type: "non-technical"
+    type: "technical"
   }
 ];
 
@@ -219,7 +219,7 @@ export const EVENT_DETAILS = {
       contact: "+91 9529647141"
     },
     fee: "₹50 per participant",
-    type: "non-technical",
+    type: "technical",
     registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   },
   4: {
@@ -277,7 +277,7 @@ export const EVENT_DETAILS = {
       contact: "NA"
     },
     fee: "Contact coordinators for details",
-    type: "non-technical",
+    type: "technical",
     registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   },
   6: {
@@ -306,7 +306,7 @@ export const EVENT_DETAILS = {
       contact: "NA"
     },
     fee: "Contact coordinators for details",
-    type: "non-technical",
+    type: "technical",
     registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   },
   7: {
@@ -335,7 +335,7 @@ export const EVENT_DETAILS = {
       contact: "NA"
     },
     fee: "Contact coordinators for details",
-    type: "non-technical",
+    type: "technical",
     registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8"
   }
 };
