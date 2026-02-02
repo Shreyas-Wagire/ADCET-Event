@@ -14,15 +14,15 @@ const eventDetails = {
             "Compete with the best minds",
             "Win exciting cash prizes"
         ],
-        highlights: "Single Entry Competition. Two challenging rounds: Online (Laptops) and Offline (Pen & Paper). Top performers from Round 1 qualify for Round 2.",
+        highlights: "Single entry competition with two challenging rounds: Round 1 (Pen & Paper MCQ test) and Round 2 (Pen & Paper MCQ test). Top performers from Round 1 qualify for Round 2, and winners are decided based on top scores.",
         events: [
             {
                 title: "Round 1",
-                description: "Online aptitude test on laptops"
+                description: "Pen-paper MCQ test based on aptitude, logical reasoning and problemsolving skills. Only shortlisted students will appear for 2nd round."
             },
             {
                 title: "Round 2",
-                description: "Offline written test for qualified participants"
+                description: "Pen-paper MCQ test.Questions will be based on Quantitative Aptitude, Verbal."
             }
         ],
         coordinator: {
@@ -35,30 +35,26 @@ const eventDetails = {
             contact: "+91 9370657289",
             image: "/head/PS.jpeg"
         },
-        fee: "₹100 per participant",
+        fee: "₹50 per participant",
         type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
         backgroundImage: "/background/apti-master.png"
     },
     2: {
         title: "Mini Hackathon",
-        subtitle: "Code, Create, Innovate",
-        description: "A dynamic event that challenges participants to ideate, develop, and present innovative tech solutions. This competition is designed to encourage creativity, problem-solving, and hands-on development.",
+        subtitle: "Think, Build, Present",
+        description: "A competitive innovation event where teams present creative solutions to real-world problems. The hackathon encourages critical thinking, teamwork, and impactful idea presentation.",
         why: [
-            "Showcase your development skills",
-            "Work on real-world problems",
-            "Network with fellow developers",
-            "Win attractive cash prizes"
+            "Present innovative ideas to a judging panel",
+            "Solve real-world problems",
+            "Enhance presentation and teamwork skills",
+            "Gain recognition and certificates"
         ],
-        highlights: "Team Size: 2-4 Members. Multiple domains including Health, Education, AI/ML, IoT, and more. Two rounds: Online Abstract Submission and Offline Demonstration.",
+        highlights: "Team Size: 2–4 members. Registration Fee: ₹50 per student. Fixed teams after registration. Focus on real-world domains such as Social, Technical, Healthcare, Education, and Sustainability. Presentation-based evaluation.",
         events: [
             {
-                title: "Round 1: Abstract Submission",
-                description: "Submit project idea and problem statement"
-            },
-            {
-                title: "Round 2: Project Demo",
-                description: "Present working prototype to judges"
+                title: "Idea Presentation",
+                description: "Each team gets 5–7 minutes for presentation followed by 2–3 minutes of Q&A. PPT, PDF, or Poster formats are allowed."
             }
         ],
         coordinator: {
@@ -71,7 +67,7 @@ const eventDetails = {
             contact: "+91 9421277748",
             image: "/head/Shruti.jpeg"
         },
-        fee: "₹200 - ₹400 per team",
+        fee: "₹100 - ₹200 per team",
         type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
         backgroundImage: "/background/mini-hack.png"
@@ -79,22 +75,22 @@ const eventDetails = {
     3: {
         title: "Group Discussion",
         subtitle: "Voice Your Thoughts",
-        description: "An engaging platform where participants showcase their communication, analytical thinking, and debating skills through structured discussions on contemporary topics.",
+        description: "A structured discussion event where participants demonstrate communication skills, analytical thinking, and confidence while discussing on-the-spot topics in a moderated environment.",
         why: [
-            "Improve communication skills",
-            "Develop critical thinking",
-            "Learn team dynamics",
-            "Enhance leadership qualities"
+            "Enhance communication and public speaking skills",
+            "Strengthen analytical and critical thinking",
+            "Understand group dynamics and teamwork",
+            "Develop leadership and decision-making abilities"
         ],
-        highlights: "Single Entry. Groups of 8-10 members formed on spot, Topics given on spot, English medium discussion, Professional evaluation criteria.",
+        highlights: "Single entry event. Entry fee: ₹50 per participant. Groups of 8–10 members formed on the spot. Topics provided on the spot. 2 minutes preparation time. 10 minutes discussion duration. English language only. Mobile phones not allowed during discussion.",
         events: [
             {
                 title: "Preparation Time",
-                description: "2 minutes for topic analysis"
+                description: "2 minutes of spontaneous preparation for the given topic"
             },
             {
                 title: "Discussion Round",
-                description: "10 minutes group discussion"
+                description: "10 minutes moderated group discussion evaluated by judges"
             }
         ],
         coordinator: {
@@ -107,7 +103,7 @@ const eventDetails = {
             contact: "+91 7499321428",
             image: "/head/shreyas.jpg"
         },
-        fee: "₹100 per participant",
+        fee: "₹50 per participant",
         type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
         backgroundImage: "/background/gd.png"
@@ -115,22 +111,22 @@ const eventDetails = {
     4: {
         title: "Innoprotex",
         subtitle: "Design Your Innovation",
-        description: "An Innovative Idea Prototype Design Competition for SY Class students to present creative and feasible prototype ideas that address real-world challenges.",
+        description: "An Innovative Idea Prototype Design Competition for SY CSE students, encouraging teams to present original, feasible prototype ideas that solve real-world challenges.",
         why: [
-            "Present innovative solutions",
-            "Develop prototype design skills",
-            "Get expert feedback",
-            "Opportunity for project funding"
+            "Present innovative and original solutions",
+            "Develop prototype design and presentation skills",
+            "Receive expert evaluation and feedback",
+            "Opportunity for further development or funding"
         ],
-        highlights: "8-10 minutes presentation time, Focus on real-world problems, Opportunity to demonstrate live prototypes.",
+        highlights: "Team size: 2–3 members. Abstract submission (max 300 words) at registration. 8–10 minutes presentation time. Real-world problem focus. Live prototype demonstration allowed.",
         events: [
             {
                 title: "Idea Presentation",
-                description: "Present problem statement and solution"
+                description: "Present the problem statement, innovation, feasibility, materials & technology, and expected impact."
             },
             {
                 title: "Prototype Demo",
-                description: "Showcase working prototype if available"
+                description: "Demonstrate a live or conceptual prototype if available using PPT, poster, video, or working model."
             }
         ],
         coordinator: {
@@ -143,26 +139,30 @@ const eventDetails = {
             contact: "+91 7058608709",
             image: "/head/Pranav Chavan.jpeg"
         },
-        fee: "₹100 per team",
+        fee: "₹100 - ₹150 per team",
         type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
         backgroundImage: "/background/innoprotex.png"
     },
     5: {
         title: "GAT Master",
-        subtitle: "Test Your General Aptitude",
-        description: "A comprehensive General Aptitude Test designed to evaluate participants' analytical thinking, reasoning abilities, and problem-solving skills.",
+        subtitle: "Test Your Knowledge & Speed",
+        description: "A two-round team-based quiz competition that evaluates participants on Current Affairs, General Knowledge, and Technology through written and buzzer-based rounds.",
         why: [
-            "Improve general aptitude skills",
-            "Prepare for competitive exams",
-            "Benchmark your skills",
+            "Enhance awareness of current affairs and GK",
+            "Improve quick thinking and team coordination",
+            "Experience an exciting buzzer quiz round",
             "Win recognition and prizes"
         ],
-        highlights: "Team Size: 2 Members. Multiple sections covering Quantitative, Logical, and Verbal Reasoning. Structured test format with time limits.",
+        highlights: "Team size: 2 members only. Entry fee: ₹50 per student. Round 1: Pen-paper MCQ test on Current Affairs & General Knowledge (40 questions, 30 minutes, one paper per team). Round 2: Technology-based buzzer round with 60 seconds per question. Shortlisting after Round 1.",
         events: [
             {
-                title: "Test Round",
-                description: "Comprehensive written test"
+                title: "Round 1: MCQ Test",
+                description: "Pen-paper MCQ test based on Current Affairs and General Knowledge."
+            },
+            {
+                title: "Round 2: Buzzer Round",
+                description: "Technology-based quiz where each team gets 60 seconds to answer."
             }
         ],
         coordinator: {
@@ -175,7 +175,7 @@ const eventDetails = {
             contact: "+91 8262968845",
             image: "/head/pruthviraj.jpeg"
         },
-        fee: "₹200 per team",
+        fee: "₹100 per team",
         type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
         backgroundImage: "/background/gat-master.png"
