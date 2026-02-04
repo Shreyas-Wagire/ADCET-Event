@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { FaArrowLeft, FaPhone, FaUserTie, FaMoneyBillWave, FaCheckCircle, FaTrophy, FaClock, FaInfoCircle, FaStar, FaAward, FaUsers, FaCalendarAlt } from 'react-icons/fa';
+import { FaArrowLeft, FaPhone, FaUserTie, FaMoneyBillWave, FaCheckCircle, FaTrophy, FaClock, FaInfoCircle, FaStar, FaAward, FaUsers, FaCalendarAlt, FaDownload } from 'react-icons/fa';
 import CountdownTimer from './CountdownTimer';
 
 const eventDetails = {
@@ -70,7 +70,8 @@ const eventDetails = {
         fee: "₹100 - ₹200 per team",
         type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
-        backgroundImage: "/background/mini-hack.png"
+        backgroundImage: "/background/mini-hack.png",
+        templateFile: "/ppt/mINi HACKathon Spark2k26.pptx"
     },
     3: {
         title: "Group Discussion",
@@ -268,6 +269,16 @@ const EventDetails = () => {
                         >
                             View Rules
                         </a>
+                        {event.templateFile && (
+                            <a
+                                href={event.templateFile}
+                                download
+                                className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 rounded-xl font-bold text-sm md:text-base shadow-xl hover:shadow-2xl transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
+                            >
+                                <FaDownload />
+                                <span>Download Template</span>
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>
