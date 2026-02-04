@@ -111,7 +111,7 @@ const eventDetails = {
     4: {
         title: "Innoprotex",
         subtitle: "Design Your Innovation",
-        description: "An Innovative Idea Prototype Design Competition for SY CSE students, encouraging teams to present original, feasible prototype ideas that solve real-world challenges.",
+        description: "An Innovative Idea Prototype Design Competition, encouraging teams to present original, feasible prototype ideas that solve real-world challenges.",
         why: [
             "Present innovative and original solutions",
             "Develop prototype design and presentation skills",

@@ -39,27 +39,6 @@ const MediaPartner = () => {
                         </div>
                     </a>
 
-                    {/* CESA Media Partner */}
-                    <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block transition-transform hover:scale-105 duration-300"
-                    >
-                        <div className="relative group p-8 rounded-3xl glass hover:bg-white/5 transition-all duration-300 border border-white/10 hover:border-teal-500/30">
-                            {/* Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-teal-500/10 to-emerald-600/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                            {/* Image */}
-                            <div className="relative z-10 bg-white/5 rounded-2xl p-6 backdrop-blur-sm">
-                                <img
-                                    src="/CESA.PNG"
-                                    alt="CESA Media Partner"
-                                    className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] object-contain filter drop-shadow-xl hover:scale-105 transition-transform duration-300"
-                                />
-                            </div>
-                        </div>
-                    </a>
                 </div>
             </div>
         </section>
