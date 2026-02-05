@@ -143,7 +143,8 @@ const eventDetails = {
         fee: "₹100 - ₹150 per team",
         type: "technical",
         registrationLink: "https://forms.gle/TmyrFpK3LXfyJbfx8",
-        backgroundImage: "/background/innoprotex.png"
+        backgroundImage: "/background/innoprotex.png",
+        templateFile: "/ppt/INNOPROTEX_2026.pptx"
     },
     5: {
         title: "GAT Master",
