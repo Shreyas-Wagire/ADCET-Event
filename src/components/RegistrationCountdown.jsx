@@ -11,8 +11,8 @@ const RegistrationCountdown = () => {
 
     useEffect(() => {
         const calculateTimeLeft = () => {
-            // Registration deadline: February 10, 2026 at 11:59 PM
-            const registrationDeadline = new Date('2026-02-10T23:59:59');
+            // Registration deadline: February 13, 2026 at 12:00 PM
+            const registrationDeadline = new Date('2026-02-13T12:00:00');
             const difference = +registrationDeadline - +new Date();
 
             if (difference > 0) {
@@ -47,7 +47,7 @@ const RegistrationCountdown = () => {
                                 <p className={`font-bold text-lg ${isUrgent ? 'text-red-300' : 'text-yellow-300'}`}>
                                     ⚡ Registration Closing Soon!
                                 </p>
-                                <p className="text-sm text-gray-400">Last date: February 10, 2026</p>
+                                <p className="text-sm text-gray-400">Last date: February 13, 2026 (Extended)</p>
                             </div>
                         </div>
 
