@@ -15,6 +15,7 @@ import TeamHierarchy from './components/TeamHierarchy'
 import Particles from './components/Particles'
 import RegistrationCountdown from './components/RegistrationCountdown'
 import MediaPartner from './components/MediaPartner'
+import ExtensionPopup from './components/ExtensionPopup'
 import PrizesSection from './components/PrizesSection'
 
 const eventData = [
@@ -154,6 +155,8 @@ function App() {
           </div>
           <Footer />
         </div>
+
+        <ExtensionPopup />
 
         {/* Floating Registration Button */}
         <FloatingRegistrationButton />
