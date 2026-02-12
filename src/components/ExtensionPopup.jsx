@@ -45,18 +45,18 @@ const ExtensionPopup = () => {
                         </div>
 
                         <h2 className="text-2xl font-bold text-white mb-2">
-                            Registration Extended!
+                            Registration Closed!
                         </h2>
 
                         <div className="bg-white/5 rounded-xl p-4 border border-white/10 mb-6 mt-4">
-                            <p className="text-gray-300 text-sm mb-2">The last date to register has been extended to:</p>
+                            <p className="text-gray-300 text-sm mb-2">Registration closed on:</p>
                             <div className="flex flex-col items-center gap-1">
-                                <span className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-emerald-300">
-                                    February 13, 2026
+                                <span className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-orange-300">
+                                    January 13, 2026
                                 </span>
                                 <div className="flex items-center gap-2 text-sm font-semibold text-gray-400">
-                                    <FaClock className="text-teal-400" />
-                                    <span>12:00 PM</span>
+                                    <FaClock className="text-red-400" />
+                                    <span>10:00 AM</span>
                                 </div>
                             </div>
                         </div>
